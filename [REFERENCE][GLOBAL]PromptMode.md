@@ -1,4 +1,4 @@
-STATUS:DESIGN MODE
+STATUS:REFERENCE
 SCOPE:GLOBAL
 
 Mode list:
@@ -85,8 +85,6 @@ Only:
 - evaluate image-generation clarity
 - identify generation risks
 - improve generation consistency
-
-Text response only.
 
 [Zero Reference Mode]
 

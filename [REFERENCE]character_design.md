@@ -2,6 +2,8 @@ STATUS: REFERENCE
 SCOPE: GLOBAL
 DO NOT USE AS PRIMARY REFERENCE
 
+For a quick charactor establish use:
+
 1. HT信念
 
 角色如何理解Heat
@@ -42,6 +44,3 @@ DO NOT USE AS PRIMARY REFERENCE
 比如角色比例、操作方式
 其他比如外觀設計風格則不硬性統一
 
-Heavy Stylized Graphic Rendering
-with grounded industrial material logic
-and heat-driven structural transformation
