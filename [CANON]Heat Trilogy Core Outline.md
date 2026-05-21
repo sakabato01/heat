@@ -1,5 +1,5 @@
 STATUS: CANON
-SCOPE: HEAT1, HEAT2, HEAT3
+SCOPE: GLOBAL
 
 Heat Trilogy Core Outline V1
 Heat Trilogy 核心大綱

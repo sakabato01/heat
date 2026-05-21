@@ -1,5 +1,5 @@
 STATUS: CANON
-SCOPE: GLOBAL
+SCOPE: HEAT3
 
 # HEAT III 女主角外觀方案（目前版本）
 
