@@ -1,5 +1,6 @@
 STATUS: REFERENCE
 SCOPE: GLOBAL
+
 # CORE
 # 不可改動
 
@@ -72,7 +73,68 @@ barefoot
 
 ---
 
-# FLEX
+# STATE MODIFIER
+# 武器結構
+---
+
+## [EquipmentStructures]
+
+# 武器結構
+# 描述武器本體的外觀與附著方式
+# 著重：
+# - 展開結構
+# - 附著位置
+# - silhouette變化
+# - 身體延伸感
+# 避免抽象設定詞
+
+例如：
+
+integrated tail-like appendage,
+folded blade housing,
+back-mounted synchronization structures,
+concealed deployment mechanisms,
+extended rear silhouette
+
+---
+
+## [WeaponFunction]
+
+# 功能導致的結構傾向
+# 不描述世界觀設定
+# 只描述功能造成的可視化結果
+
+例如：
+
+body-integrated deployment,
+minimal external carrying,
+compact standby construction,
+integrated utility-oriented structure,
+low-profile mechanical arrangement
+
+---
+
+## [WeaponPresence]
+
+# 武器存在感
+# 描述武器給人的視覺印象與威脅感
+# 用來控制：
+# - 侵略性
+# - 軍武感
+# - 武器辨識度
+# - 情緒氛圍
+
+例如：
+
+low visual aggression,
+concealed weapon presence,
+non-military profile,
+tool-like appearance,
+minimal combat emphasis
+
+---
+
+# VISUAL SURFACE
 # 可改動
 
 ## [Outfit]

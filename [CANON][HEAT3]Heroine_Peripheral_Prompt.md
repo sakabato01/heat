@@ -3,63 +3,145 @@ SCOPE: HEAT3
 
 # HEAT III Heroine Peripheral Prompt
 
-```text
-HEAT III heroine, abandoned synchronization organ learning to live like a human,
-female cybernetic drifter,
+HEAT III heroine,
+female abandoned synchronization humanoid,
+
+# CORE
+
+[CoreIdentity]
+post-human synchronization humanoid,
+peripheral civilian drifter,
+salvaged cybernetic lifeform
+
+[Silhouette]
 long straight black hair,
-slightly covering one side of the face,
-two advanced artificial eyes hidden behind hair,
-gentle but quiet older-sister atmosphere,
+slender tall body,
+oversized long coat silhouette,
+thin limb structure,
 
-wearing oversized white medical-industrial long coat,
-aged plastic-like medical fabric,
-grayish white surface,
-oil stains,
-burn marks,
-asymmetrical repair stitching,
-handmade embroidery,
-CRT symbols,
-live house graffiti,
-Heat crack patterns,
-small childish doodles sewn into the coat,
-
-black t-shirt underneath,
-simple dark skirt,
+[RecognitionZone]
+hair loosely framing face,
 barefoot,
-visible cybernetic scars on feet and ankles,
+oversized worn white coat,
+slightly elongated worn red scarf
+visible prosthetic repair traces
+
+[Behavior]
+slightly slow movement,
+quiet standing posture,
+low-aggression body language,
+casual civilian presence
+
+[LockedElements]
+long black hair,
+barefoot,
+red scarf,
+emotionally restrained presence
+
+# CURRENT STATE
+
+[StateType]
+peripheral civilian survival state
+
+[AttachedStructures]
+flat integrated repair seams,
+minimal non-bulky waist fasteners
+
+[FunctionalStructure]
+rough self-repair construction,
+mixed old and new prosthetic integration,
+utility-oriented arrangement,
+non-military structural balance,
+minimal carried equipment
+
+[Presence]
+low visual aggression,
+quiet civilian atmosphere,
+slightly tired drifter presence,
+non-heroic profile
+
+[StateBehavior]
+slightly lowered shoulders,
+casual idle posture,
+reduced mechanical rigidity,
+subtle human-like movement habits
+
+[ExpressionShift]
+tired eyes,
+neutral expression,
+soft unfocused gaze
+
+[ObjectInteraction]
+arms naturally hanging at sides
+
+# VISUAL SURFACE
+
+[Outfit]
+oversized worn industrial coat,
+worn oversized t-shirt,
+roughly shortened hem,
+faded industrial work shorts,
+soft loose civilian clothing,
+mixed salvaged civilian clothing,
+hand-repaired fabric sections
+
+[BodyFeatures]
+soft desaturated human skin tone,
+partially exposed white biomechanical torso frame,
+black industrial prosthetic arms and legs,
+mismatched salvaged prosthetic segments,
+visible repair integration,
 roughly repaired prosthetic limbs,
-industrial salvaged cybernetic arms and legs,
-mixed old and new technology,
-visible bolts, cables, exposed repair traces,
+thin body frame,
+cybernetic scars on feet and ankles
 
-extremely long red scarf,
-old and damaged,
-heat-burnt edges,
-flowing naturally in the wind,
+[Material]
+aged polymer surface,
+industrial fabric,
+soft industrial grime,
+matte ceramic components,
+weathered synthetic materials
 
-leaning near a patched motorcycle,
-urban outskirts scrapyard atmosphere,
-CRT glow,
-rainy night,
-neon reflections,
-messy but warm peripheral city feeling,
+[Color]
+off-white mechanical surfaces,
+dark industrial prosthetics,
+soft desaturated skin tones,
+black,
+muted red accents,
+aged dark fabric tones
 
-looks tired but approachable,
-quiet human warmth,
-not a hero,
-looks like someone truly living in the corner of the world,
+[Details]
+repair stitching,
+oil stains,
+subtle burn marks,
+small hand-drawn markings
 
-Heavy Stylized Graphic Rendering
-with grounded industrial material logic
-and heat-driven structural transformation,
+[Environment]
+simple industrial background,
+urban peripheral atmosphere
 
-high detail anime cinematic concept art,
-industrial cyberpunk realism,
-Ghost in the Shell + Girls Last Tour + BLAME! influence,
-soft red Heat accents,
-cold gray urban palette,
-rain,
-fog,
-live house atmosphere,
-melancholic but human
-```
+[Lighting]
+soft neutral lighting,
+readable facial lighting,
+soft industrial ambient light
+
+# RULES
+
+[SuppressionRules]
+avoid tactical soldier appearance,
+avoid idol aesthetics,
+avoid clean military design,
+avoid excessive weaponization,
+avoid heavy armor silhouette,
+avoid excessive mechanical density,
+avoid overdesigned accessories,
+avoid dramatic facial shadows,
+avoid cinematic half-face lighting
+
+[Priority]
+silhouette > recognition
+civilian identity > combat identity
+human warmth > mechanical intimidation
+large shapes > fine details
+clean silhouette > visual noise
+facial readability > atmosphere

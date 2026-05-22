@@ -1,6 +1,8 @@
 STATUS: CANON
 SCOPE: HEAT3
 
+# HEAT III Heroine Central Prompt
+
 HEAT III heroine,
 female post-human synchronization civilization entity,
 
