@@ -3,7 +3,7 @@ SCOPE: HEAT3
 
 # Story Outline
 
-HEAT III 上帝視角大綱（目前版本）
+HEAT III 上帝視角大綱
 
 ---
 
