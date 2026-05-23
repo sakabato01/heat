@@ -1,254 +1,258 @@
 from pathlib import Path
-from collections import OrderedDict
 import re
 
-# =========================================================
-# UNIVERSAL PROMPT STACK ASSEMBLER
-# =========================================================
+# ==================================================
+# CONFIG
+# ==================================================
 
-MODULE_DIR = Path("./modules")
+BASE_DIR = Path(__file__).parent.resolve()
 
-STACK_FILE = Path("./active_stack.md")
-
-OUTPUT_DIR = Path("./output")
-OUTPUT_DIR.mkdir(exist_ok=True)
+STACK_FILE = BASE_DIR / "active_stack.md"
+MODULE_DIR = BASE_DIR / "modules"
+OUTPUT_DIR = BASE_DIR / "output"
 
 OUTPUT_FILE = OUTPUT_DIR / "final_prompt.md"
 
+# ==================================================
+# OUTPUT SETUP
+# ==================================================
 
-# =========================================================
-# Parse Active Stack
-# =========================================================
+OUTPUT_DIR.mkdir(exist_ok=True)
 
-def parse_stack_file(path):
+# ==================================================
+# STACK PARSER
+# ==================================================
 
-    stack = OrderedDict()
+def parse_stack(stack_text):
+    stack = {}
 
     current_section = None
+        
+    for raw_line in stack_text.splitlines():
+        line =(
+        raw_line
+        .strip()
+        .replace("\ufeff", "")
+        )
 
-    with open(path, "r", encoding="utf-8") as f:
+        # Skip empty lines
+        if not line:
+            continue
 
-        for raw_line in f:
+        # Skip comments
+        if line.startswith("#"):
+            continue
 
-            line = raw_line.strip()
+        # Section
+        if line.endswith(":"):
+            current_section = line[:-1].strip()
+            stack[current_section] = []
+            continue
 
-            if not line:
-                continue
-
-            # Ignore comments
-            if line.startswith("#"):
-                continue
-
-            # Section
-            if line.endswith(":"):
-
-                current_section = line[:-1]
-
-                stack[current_section] = []
-
-                continue
-
-            # Module
-            if current_section:
-                stack[current_section].append(line)
+        # Module entry
+        if current_section:
+            stack[current_section].append(line)
 
     return stack
 
-
-# =========================================================
-# Load Module
-# =========================================================
+# ==================================================
+# MODULE LOADER
+# ==================================================
 
 def load_module(module_name):
+    """
+    Recursively search modules directory
+    for matching md file.
+    """
 
-    path = MODULE_DIR / f"{module_name}.md"
+    matches = list(
+        MODULE_DIR.rglob(f"{module_name}.md")
+    )
 
-    if not path.exists():
-        raise FileNotFoundError(f"Module not found: {path}")
+    if not matches:
+        raise FileNotFoundError(
+            f"Module not found: {module_name}"
+        )
+
+    if len(matches) > 1:
+        raise ValueError(
+            f"Multiple modules found for: {module_name}"
+        )
+
+    path = matches[0]
 
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
+# ==================================================
+# RULE EXTRACTION
+# ==================================================
 
-# =========================================================
-# Extract Rules
-# =========================================================
+def extract_block(content, block_name):
+    pattern = rf"\[{re.escape(block_name)}\](.*?)(?=\n\[|$)"
 
-def extract_rules(content):
-
-    suppression = []
-    priority = []
-
-    suppression_match = re.search(
-        r"\[SuppressionRules\](.*?)\[Priority\]",
+    match = re.search(
+        pattern,
         content,
         re.DOTALL
     )
 
-    if suppression_match:
+    if not match:
+        return []
 
-        lines = suppression_match.group(1).strip().splitlines()
+    block = match.group(1)
 
-        for line in lines:
+    lines = []
 
-            line = line.strip()
+    for line in block.splitlines():
+        clean = line.strip()
 
-            if line and not line.startswith("["):
-                suppression.append(line)
+        if not clean:
+            continue
 
-    priority_match = re.search(
-        r"\[Priority\](.*)",
-        content,
-        re.DOTALL
-    )
+        lines.append(clean)
 
-    if priority_match:
+    return lines
 
-        lines = priority_match.group(1).strip().splitlines()
+# ==================================================
+# RULE MERGING
+# ==================================================
 
-        for line in lines:
-
-            line = line.strip()
-
-            if line and not line.startswith("["):
-                priority.append(line)
-
-    return suppression, priority
-
-
-# =========================================================
-# Deduplicate Rules
-# =========================================================
-
-def deduplicate(items):
-
+def merge_unique(items):
     seen = set()
-
-    output = []
+    result = []
 
     for item in items:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
 
-        normalized = item.lower()
+    return result
 
-        if normalized not in seen:
-
-            seen.add(normalized)
-
-            output.append(item)
-
-    return output
-
-
-# =========================================================
-# Remove RULES block from module body
-# =========================================================
-
-def remove_rules(content):
-
-    cleaned = re.sub(
-        r"# RULES.*",
-        "",
-        content,
-        flags=re.DOTALL
-    ).strip()
-
-    return cleaned
-
-
-# =========================================================
-# Build Final Prompt
-# =========================================================
+# ==================================================
+# PROMPT BUILDER
+# ==================================================
 
 def build_prompt(stack):
 
-    output = []
+    prompt_sections = []
 
-    all_suppression = []
-    all_priority = []
+    suppression_rules = []
+    priority_rules = []
 
-    output.append("# GENERATED PROMPT STACK\n")
+    for section_name, modules in stack.items():
 
-    for section, modules in stack.items():
+        prompt_sections.append(
+            f"# =================================================="
+        )
 
-        output.append("\n# ==================================================")
-        output.append(f"# {section.upper()}")
-        output.append("# ==================================================\n")
+        prompt_sections.append(
+            f"# {section_name.upper()}"
+        )
+
+        prompt_sections.append(
+            f"# ==================================================\n"
+        )
 
         for module_name in modules:
 
             content = load_module(module_name)
 
-            suppression, priority = extract_rules(content)
+            prompt_sections.append(content)
+            prompt_sections.append("\n")
 
-            all_suppression.extend(suppression)
-            all_priority.extend(priority)
+            # Collect rules
+            suppression_rules.extend(
+                extract_block(
+                    content,
+                    "SuppressionRules"
+                )
+            )
 
-            cleaned_content = remove_rules(content)
+            priority_rules.extend(
+                extract_block(
+                    content,
+                    "Priority"
+                )
+            )
 
-            output.append(f"\n<!-- MODULE: {module_name} -->\n")
-
-            output.append(cleaned_content)
-
-            output.append("\n")
-
-    # =====================================================
+    # ==================================================
     # MERGED RULES
-    # =====================================================
+    # ==================================================
 
-    output.append("\n# ==================================================")
-    output.append("# MERGED RULES")
-    output.append("# ==================================================\n")
+    prompt_sections.append(
+        "# =================================================="
+    )
 
-    merged_suppression = deduplicate(all_suppression)
-    merged_priority = deduplicate(all_priority)
+    prompt_sections.append(
+        "# MERGED GLOBAL RULES"
+    )
 
-    output.append("[SuppressionRules]\n")
+    prompt_sections.append(
+        "# ==================================================\n"
+    )
 
-    for item in merged_suppression:
-        output.append(item)
+    # Suppression Rules
+    merged_suppression = merge_unique(
+        suppression_rules
+    )
 
-    output.append("\n")
+    if merged_suppression:
+        prompt_sections.append(
+            "[SuppressionRules]"
+        )
 
-    output.append("[Priority]\n")
+        for rule in merged_suppression:
+            prompt_sections.append(rule)
 
-    for item in merged_priority:
-        output.append(item)
+        prompt_sections.append("")
 
-    output.append("\n")
+    # Priority Rules
+    merged_priority = merge_unique(
+        priority_rules
+    )
 
-    return "\n".join(output)
+    if merged_priority:
+        prompt_sections.append(
+            "[Priority]"
+        )
 
+        for rule in merged_priority:
+            prompt_sections.append(rule)
 
-# =========================================================
-# Main
-# =========================================================
+        prompt_sections.append("")
+
+    return "\n".join(prompt_sections)
+
+# ==================================================
+# MAIN
+# ==================================================
 
 def main():
 
-    print("======================================")
-    print("UNIVERSAL PROMPT STACK ASSEMBLER")
-    print("======================================")
+    if not STACK_FILE.exists():
+        raise FileNotFoundError(
+            "active_stack.md not found"
+        )
 
-    stack = parse_stack_file(STACK_FILE)
+    with open(STACK_FILE, "r", encoding="utf-8") as f:
+        stack_text = f.read()
 
-    print("\nLoaded Stack:\n")
-
-    for section, modules in stack.items():
-
-        print(f"{section}:")
-
-        for module in modules:
-            print(f"  - {module}")
+    stack = parse_stack(stack_text)
 
     final_prompt = build_prompt(stack)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(final_prompt)
 
-    print("\n======================================")
-    print(f"Generated: {OUTPUT_FILE}")
-    print("======================================")
+    print("===================================")
+    print("Prompt assembly completed.")
+    print(f"Output: {OUTPUT_FILE}")
+    print("===================================")
 
+# ==================================================
+# ENTRY
+# ==================================================
 
 if __name__ == "__main__":
     main()

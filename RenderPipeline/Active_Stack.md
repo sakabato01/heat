@@ -5,29 +5,35 @@
 # Universal Rules
 
 Rules:
-[Heat3]Global_Rule_Stack
+heat3_global_rule_stack
 
 # Shared Rendering
 
 Rendering:
-[Heat3]Rendering
+heat3_rendering
 
 # Character Construction Pattern
 
 CharacterPattern:
-[Heat3]Character_Pattern
+heat3_character_pattern
 
 # Active Character Core
 
 Character:
-[Heat3]Character_Core
+heat3_character_core
 
 # Active State
-
 State:
-[Heat3]State_Peripheral
+heat3_state_peripheral
 
-# Active Scene
+# Active World Language
+World:
+heat3_world_language
 
+# Active Camera Language
+Camera:
+heat3_camera_language
+
+# Active SceneComposition
 Scene:
-[Heat3]Scene
+heat3_scene_composition

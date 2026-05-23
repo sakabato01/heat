@@ -1,4 +1,4 @@
-# Universal Prompt Stack Pipeline Guide
+# Pipeline_Use_Guide.md
 
 STATUS: GLOBAL
 SCOPE: UNIVERSAL
@@ -21,40 +21,25 @@ The final prompt is assembled automatically through a stack structure.
 The pipeline separates:
 
 - rendering philosophy
+- world existence
 - character identity
 - temporary states
+- camera interpretation
 - scene composition
 - global rules
 
 This prevents visual contamination between systems.
 
-Example:
-
-Character identity should NOT control:
-
-- lighting
-- rendering density
-- scene atmosphere
-
-State systems should NOT destroy:
-
-- silhouette readability
-- recognition consistency
-
-Rendering systems should NOT redefine:
-
-- character personality
-- posture identity
-
 ---
 
 # 3. Pipeline Structure
 
-The generation pipeline:
-
+```text
 Global Rules
     ↓
 Rendering
+    ↓
+World
     ↓
 Character Pattern
     ↓
@@ -62,12 +47,18 @@ Character Core
     ↓
 State
     ↓
-Scene
+Camera
+    ↓
+Scene Composition
     ↓
 Final Prompt
+```
+
+---
 
 # 4. Recommended Folder Structure
 
+```text
 project/
 │
 ├── universal_prompt_stack_assembler.py
@@ -82,282 +73,237 @@ project/
     │   └── [HEAT3]Global_Rule_Stack.md
     │
     ├── rendering/
-    │   ├── [HEAT3]Base_Rendering.md
-    │   ├── [HEAT3]Collapse_Rendering.md
-    │   └── [HEAT3]Overheat_Rendering.md
+    │   └── [HEAT3]Base_Rendering.md
+    │
+    ├── worlds/
+    │   └── [HEAT3]World_Language.md
     │
     ├── character_patterns/
     │   └── [HEAT3]Character_Pattern.md
     │
     ├── characters/
-    │   ├── [HEAT3]Heroine_Core.md
-    │   ├── [HEAT3]Operator_Core.md
-    │   └── [HEAT3]Civilian_Core.md
+    │   └── [HEAT3]Heroine_Core.md
     │
     ├── states/
-    │   ├── [HEAT3]Peripheral_Survival_State.md
-    │   ├── [HEAT3]Central_Synchronization_State.md
-    │   └── [HEAT3]Combat_Overheat_State.md
+    │   └── [HEAT3]Peripheral_Survival_State.md
+    │
+    ├── camera/
+    │   └── [HEAT3]Camera_Language.md
     │
     └── scenes/
-        ├── [HEAT3]Industrial_Periphery_Scene.md
-        └── [HEAT3]Flooded_Megastructure_Scene.md
-        
+        └── [HEAT3]Scene_Composition.md
+```
+
+---
+
 # 5. Naming Convention
 
 Recommended format:
 
+```text
 [Universe]Module_Name.md
+```
 
-Example:
+---
 
-- [HEAT3]Base_Rendering.md
-- [HEAT3]Heroine_Core.md
-- [HEAT3]Peripheral_Survival_State.md
+# 6. Layer Responsibilities
 
-# 6. Module Responsibilities
+## Rendering
 
-Global Rules
-
-Controls:
-
-- generation hierarchy
-- suppression ownership
-- cross-layer consistency
-
-Must NOT define:
-
-- character identity
-- rendering details
-Rendering
+Defines how the world is visually rendered.
 
 Controls:
 
-- rendering philosophy
-- lighting structure
+- lighting behavior
 - material response
 - visual density
+- shape readability
 
-Must NOT define:
+---
 
-- personality
-- emotional narrative
-Character Pattern
+## World
 
-Defines:
+Defines what kind of world exists.
 
-- universal character construction structure
+Controls:
 
-Used as:
+- civilization structure
+- architecture identity
+- environmental conditions
 
-- character blueprint template
-Character Core
+---
 
-Defines:
+## Character Core
 
-- immutable identity
+Defines immutable identity.
+
+Controls:
+
 - silhouette
-- recognition zones
-- locked elements
+- recognition
+- iconic visual features
 
-Must remain stable across all states.
+---
 
-State
+## State
 
-Defines:
+Defines temporary existence condition.
 
-- temporary existence condition
-- posture shifts
-- equipment exposure
+Controls:
+
+- posture
 - emotional intensity
+- current condition
+
+---
+
+## Camera
+
+Defines how the world is observed.
+
+Controls:
+
+- framing
+- perspective
+- emotional viewing distance
+
+---
+
+## Scene Composition
+
+Defines spatial arrangement inside the frame.
+
+Controls:
+
+- negative space
+- subject placement
+- environmental balance
+
+---
+
+# 7. Responsibility Separation Philosophy
+
+Each layer should control only one primary responsibility.
+
+This prevents:
+
+- rendering contamination
+- identity drift
+- cinematic override
+- scene clutter collapse
+
+---
+
+# 8. Reusable Layer Structure
+
+One world can support multiple cameras
+and multiple scene compositions.
 
 Example:
 
-- civilian survival state
-- synchronization state
-- overload state
+```text
+Industrial_Periphery_World
+    +
+Lonely_Distant_Camera
+    +
+Open_Empty_Composition
+```
 
-Only one major state should be active at once.
+creates quiet isolation atmosphere.
 
-Scene
+---
 
-Defines:
+# 9. active_stack.md Example
 
-- environmental composition
-- spatial readability
-- atmosphere framing
+```md
+Rules:
+[HEAT3]Global_Rule_Stack
 
-Must NOT override:
+Rendering:
+[HEAT3]Base_Rendering
 
-- rendering language
-- character readability
+World:
+[HEAT3]World_Language
 
-# 7. active_stack.md
+CharacterPattern:
+[HEAT3]Character_Pattern
 
-The stack file defines which modules are currently active.
+Character:
+[HEAT3]Heroine_Core
 
-Example:
+State:
+[HEAT3]Peripheral_Survival_State
 
-- Rules: [HEAT3]Global_Rule_Stack
-- Rendering: [HEAT3]Base_Rendering
-- CharacterPattern: [HEAT3]Character_Pattern
-- Character: [HEAT3]Heroine_Core
-- State: [HEAT3]Peripheral_Survival_State
-- Scene: [HEAT3]Industrial_Periphery_Scene
+Camera:
+[HEAT3]Camera_Language
 
-# 8. Generation Workflow
+Scene:
+[HEAT3]Scene_Composition
+```
 
-- Step 1
+---
 
-Edit:
+# 10. Generation Workflow
 
-- active_stack.md
+## Step 1
 
-Select:
+Edit active_stack.md
 
-- rendering
-- character
-- state
-- scene
+## Step 2
 
-- Step 2
+Run:
 
-Run assembler:
+```bash
+python universal_prompt_stack_assembler.py
+```
 
-- python universal_prompt_stack_assembler.py
+## Step 3
 
-- Step 3
+Open:
 
-Assembler automatically:
+```text
+output/final_prompt.md
+```
 
-- loads modules
-- merges rules
-- removes duplicate rules
-- builds final prompt
+---
 
-- Step 4
+# 11. Common Errors
 
-Generated output:
+## Module Not Found
 
-- output/final_prompt.md
+Wrong module name or missing md file.
 
-- Step 5
-
-Copy final_prompt.md content into:
-
-- Flux
-- SDXL
-- ComfyUI
-- Midjourney
-- NAI
-- other image models
-
-Generate character image.
-
-# 9. Rule Hierarchy
-
-Recommended hierarchy:
-
-- Global Rules
-- Rendering
-- Character
-- State
-- Scene
-
-Reason:
-
-- rendering consistency must remain stable
-- state must not destroy character identity
-- scene must support silhouette readability
-
-# 10. Recommended State Usage
-
-Recommended:
-
-- 1 Character Core
-- 1 Major State
-- 1 Scene
-- 1 Rendering
-
-Avoid:
-
-- Multiple conflicting major states
-
-Example of bad usage:
-
-- Peripheral survival state
-- Central synchronization state
-- Heavy combat state
-
-loaded simultaneously.
-
-This causes identity conflicts.
-
-# 11. Recommended Expansion Structure
-
-Future systems may include:
-
-- Additional Rendering Systems
-- Collapse_Rendering
-- Memory_Rendering
-- Overheat_Rendering
-- Additional States
-- Wet_State
-- Injured_State
-- Heat_Level_3_State
-- Synchronization_Collapse_State
-- Additional Scenes
-- Flooded_City_Scene
-- Underground_Factory_Scene
-- Civilization_Core_Scene
-
-# 12. Common Errors
-
-Module Not Found
-
-Cause:
-
-- wrong module name
-- missing md file
-- Invalid Stack Format
+## Invalid Stack Format
 
 Incorrect:
 
-- Rendering
-- Base_Rendering
+```md
+Rendering
+Base_Rendering
+```
 
 Correct:
 
+```md
 Rendering:
-- Base_Rendering
-- Rule Collision
+Base_Rendering
+```
 
-Example:
+---
 
-Rendering prefers:
+# 12. Long-Term Expansion
 
-clean surfaces
+Future systems may include:
 
-while State prefers:
+- Motion Layer
+- Interaction Layer
+- Focus Layer
+- Stability Layers
 
-heavy mechanical density
-
-This may create unstable outputs.
+---
 
 # 13. Long-Term Philosophy
 
-This system is not intended to be:
+The goal is not a collection of prompts.
 
-a collection of prompts
-
-The goal is:
-
-a modular visual generation framework
-
-The pipeline should support:
-
-multiple universes
-multiple characters
-interchangeable states
-interchangeable rendering systems
-scalable visual architecture
+The goal is a modular visual generation framework.
