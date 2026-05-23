@@ -1,7 +1,9 @@
 STATUS: CANON
 SCOPE: HEAT3
 
-# HEAT III 上帝視角大綱（目前版本）
+# Story Outline
+
+HEAT III 上帝視角大綱（目前版本）
 
 ---
 

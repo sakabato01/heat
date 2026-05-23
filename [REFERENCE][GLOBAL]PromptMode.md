@@ -1,6 +1,8 @@
 STATUS:REFERENCE
 SCOPE:GLOBAL
 
+# Prompt Mode
+
 Mode list:
 [Prompt Only Mode]
 [Text Only Mode]

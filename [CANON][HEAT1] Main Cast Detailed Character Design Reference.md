@@ -1,6 +1,8 @@
 STATUS: CANON
 SCOPE: HEAT1
 
+# Main Cast Detailed Character Design Reference
+
 
 因此以下以：
 

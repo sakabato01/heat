@@ -2,6 +2,8 @@ STATUS: ARCHIVE
 SCOPE: NONE
 DO NOT USE AS REFERENCE
 
+# Character Design Ref
+
 例如你現在可以開始這樣看角色：
 
 不是：

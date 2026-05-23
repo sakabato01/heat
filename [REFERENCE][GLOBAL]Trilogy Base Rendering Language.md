@@ -1,7 +1,7 @@
 STATUS: REFERENCE
 SCOPE: GLOBAL
 
-Trilogy Base Rendering Language
+# Trilogy Base Rendering Language
 
 - low visual noise
 - large clean surfaces

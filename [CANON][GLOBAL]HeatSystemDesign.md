@@ -2,6 +2,8 @@ STATUS: CANON
 SCOPE: GLOBAL
 DO NOT USE AS PRIMARY REFERENCE
 
+# Heat System Design
+
 # 1. 核心戰鬥哲學
 
 ## 遊戲類型

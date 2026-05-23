@@ -1,6 +1,8 @@
 STATUS: REFERENCE
 SCOPE: GLOBAL
 
+# Charactor Design Pattern
+
 # CORE
 # 不可改動
 

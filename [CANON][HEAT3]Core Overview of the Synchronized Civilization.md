@@ -1,6 +1,8 @@
 STATUS: CANON
 SCOPE: HEAT3
 
+# Core Overview of the Synchronized Civilization
+
 關於HEAT3中同步文明核心整理（目前版本）
 核心概念
 

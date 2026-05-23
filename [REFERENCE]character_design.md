@@ -2,6 +2,8 @@ STATUS: REFERENCE
 SCOPE: GLOBAL
 DO NOT USE AS PRIMARY REFERENCE
 
+# Character Design
+
 For a quick charactor establish use:
 
 1. HT信念
