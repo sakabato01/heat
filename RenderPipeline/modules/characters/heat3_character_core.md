@@ -15,44 +15,116 @@ This layer must remain stable across all states.
 
 ## [CoreIdentity]
 
-post-human synchronization humanoid,
-salvaged cybernetic lifeform
+Defines:
+
+- species category
+- civilization classification
+- biological origin
+- existential category
+- synchronization type
+
+Must remain:
+
+- identity-stable
+- state-independent
+
+Must NOT define:
+
+- emotional condition
+- temporary role
+- equipment state
 
 ---
 
 ## [Silhouette]
 
-long straight black hair,
-slender tall body,
-oversized long coat silhouette,
-thin limb structure
+Defines:
+
+- long-range body readability
+- body proportion identity
+- outer contour structure
+- hairstyle massing
+- shape recognition language
+
+Controls:
+
+- primary visual recognition
+- distance readability
+- large-form identity
+
+Must NOT define:
+
+- emotional posture
+- temporary deformation
+- damage condition
 
 ---
 
 ## [RecognitionZone]
 
-hair loosely framing face,
-barefoot,
-oversized worn white coat,
-slightly elongated worn red scarf,
-visible prosthetic repair traces
+Defines:
+
+- iconic recognition anchors
+- close-range recognizable structures
+- signature accessories
+- stable visual markers
+- identity confirmation points
+
+Controls:
+
+- fast visual recognition
+- identity persistence
+- recognition consistency
+
+Must NOT define:
+
+- temporary state artifacts
+- emotional condition
+- environmental damage
 
 ---
 
 ## [Behavior]
 
-slightly slow movement,
-quiet standing posture,
-low-aggression body language
+Defines:
+
+- default body language
+- baseline movement tendency
+- neutral posture philosophy
+- natural behavioral rhythm
+
+Controls:
+
+- passive movement identity
+- baseline physical presence
+
+Must NOT define:
+
+- temporary emotional state
+- combat mode behavior
+- synchronization state behavior
 
 ---
 
 ## [LockedElements]
 
-long black hair,
-barefoot,
-red scarf,
-emotionally restrained presence
+Defines:
+
+- immutable identity anchors
+- non-removable recognition structures
+- cross-state identity preservation
+
+Controls:
+
+- anti-drift stability
+- persistent recognition
+- identity continuity
+
+Must remain visible across:
+
+- state changes
+- rendering changes
+- cinematic changes
 
 ---
 
@@ -60,12 +132,28 @@ emotionally restrained presence
 
 [SuppressionRules]
 
-avoid exaggerated anime heroine aesthetics,
-avoid tactical soldier appearance,
-avoid excessive visual aggression
+Defines:
+
+- forbidden identity directions
+- prohibited silhouette drift
+- unwanted archetype contamination
+
+Purpose:
+
+- prevent identity collapse
+- maintain generation stability
+
+---
 
 [Priority]
 
-silhouette > details
-recognition > decoration
-human warmth > mechanical intimidation
+Defines:
+
+- internal importance hierarchy
+- visual decision order
+- conflict resolution priority
+
+Purpose:
+
+- preserve core readability
+- stabilize generation dominance
