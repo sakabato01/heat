@@ -12,14 +12,30 @@ This layer controls:
 - identity
 - silhouette
 - recognition
-- behavior
+- baseline personality
+- passive behavioral language
 - surface organization
 
-This layer defines WHO exists.
+This layer defines:
+
+> WHO the character is.
 
 This layer must remain stable
-across rendering, camera,
-scene, and world variation.
+across:
+
+- heat variation
+- combat escalation
+- rendering variation
+- cinematic interpretation
+- scene context
+
+This layer must NOT define:
+
+- HT state behavior
+- combat escalation logic
+- cinematic intensity
+- temporary emotional overload
+- heat amplification behavior
 
 ---
 
@@ -33,6 +49,7 @@ Defines:
 - civilization classification
 - biological/synthetic origin
 - species identity
+- social role
 
 Controls:
 
@@ -47,9 +64,10 @@ Must remain:
 
 Must NOT define:
 
+- HT state
+- combat rhythm
 - rendering philosophy
-- camera interpretation
-- environmental composition
+- scene interpretation
 
 ---
 
@@ -60,19 +78,26 @@ Defines:
 - body proportion
 - contour readability
 - hairstyle massing
-- distance recognition
+- long-range recognition
 
 Controls:
 
 - silhouette persistence
-- long-range readability
+- distance readability
 - primary recognition
 
 Must remain readable across:
 
 - outfit variation
+- combat variation
 - state variation
 - cinematic variation
+
+Must NOT define:
+
+- emotional escalation
+- HT distortion
+- combat pacing
 
 ---
 
@@ -92,7 +117,7 @@ Controls:
 
 Must remain stable across:
 
-- surface variation
+- HT escalation
 - rendering variation
 - operational variation
 
@@ -114,12 +139,13 @@ Controls:
 Must remain visible across:
 
 - environmental variation
-- rendering variation
+- combat variation
 - cinematic variation
+- HT escalation
 
 ---
 
-# BEHAVIOR
+# PERSONALITY
 
 ## [Behavior]
 
@@ -128,19 +154,27 @@ Defines:
 - baseline posture tendency
 - passive movement rhythm
 - natural physical behavior
-- non-verbal identity expression
+- non-verbal personality expression
+- low-pressure behavioral state
 
 Controls:
 
 - behavioral readability
 - passive presence
-- movement identity
+- personality readability
+
+Must represent:
+
+> how the character naturally exists
+> outside of HT escalation
 
 Must NOT define:
 
+- HT amplification
+- combat frenzy
 - cinematic acting
-- camera motion
-- scene choreography
+- state transition behavior
+- emotional overload states
 
 ---
 
@@ -148,19 +182,115 @@ Must NOT define:
 
 Defines:
 
-- emotional pressure baseline
-- social atmosphere projection
-- existential presence tendency
+- baseline emotional atmosphere
+- social pressure tendency
+- interpersonal emotional distance
+- passive existential feeling
 
 Controls:
 
 - psychological readability
-- emotional distance perception
+- emotional interpretation
+- social presence consistency
 
 Must remain:
 
-- silhouette-compatible
 - identity-compatible
+- silhouette-compatible
+
+Must NOT define:
+
+- HT-state pressure
+- combat escalation intensity
+- synchronized combat flow
+- overheat behavior
+
+---
+
+# COMBAT
+
+## [CombatRole]
+
+Defines:
+
+- battlefield role
+- combat specialization
+- pressure direction
+- tactical identity
+
+Examples:
+
+- rushdown
+- suppression
+- rhythm control
+- aerial mobility
+- counter-focused
+- synchronized pressure
+
+Controls:
+
+- combat readability
+- gameplay identity
+- encounter role clarity
+
+Must remain independent from:
+
+- HT escalation state
+- cinematic intensity
+- emotional breakdown behavior
+
+---
+
+## [CombatBehavior]
+
+Defines:
+
+- baseline combat motion language
+- attack delivery tendency
+- movement usage during combat
+- weapon interaction behavior
+
+Controls:
+
+- combat readability
+- action identity
+- gameplay motion consistency
+
+Examples:
+
+- maintains distance while attacking
+- aggressive forward pressure
+- continuous movement attacks
+- weapon-centered combat rhythm
+
+Must NOT define:
+
+- HT-stage amplification
+- emotional collapse
+- heat distortion behavior
+- temporary overdrive states
+
+---
+
+## [WeaponSignature]
+
+Defines:
+
+- signature weapon usage language
+- recognizable combat interaction style
+- attack readability anchors
+
+Controls:
+
+- weapon recognition
+- combat silhouette identity
+- action readability
+
+Must remain stable across:
+
+- HT variation
+- combat escalation
+- cinematic variation
 
 ---
 
@@ -182,8 +312,9 @@ Controls:
 
 Must NOT define:
 
-- silhouette ownership
 - body structure
+- HT state behavior
+- combat escalation logic
 
 ---
 
@@ -193,7 +324,7 @@ Defines:
 
 - visible synthetic structures
 - exposed mechanical systems
-- biomechanical visibility language
+- biomechanical readability
 
 Controls:
 
@@ -202,8 +333,9 @@ Controls:
 
 Must NOT redefine:
 
-- identity ownership
-- emotional projection
+- personality
+- emotional state
+- HT amplification
 
 ---
 
@@ -243,7 +375,8 @@ Controls:
 Must avoid:
 
 - unstable palette fragmentation
-- excessive color noise
+- HT-state color overload
+- excessive visual noise
 
 ---
 
@@ -265,6 +398,12 @@ Must remain subordinate to:
 - silhouette readability
 - recognition hierarchy
 
+Must NOT define:
+
+- HT escalation effects
+- temporary combat effects
+- cinematic distortion
+
 ---
 
 # RULES
@@ -274,7 +413,9 @@ Must remain subordinate to:
 avoid archetype drift,
 avoid unreadable silhouette complexity,
 avoid excessive decorative density,
-avoid unstable recognition structures
+avoid unstable recognition structures,
+avoid embedding HT-state behavior into character core,
+avoid mixing combat escalation with baseline personality
 
 ---
 
@@ -283,6 +424,7 @@ avoid unstable recognition structures
 identity
 > silhouette
 > recognition
-> behavioral readability
+> personality readability
+> combat readability
 > surface readability
 > decorative detail

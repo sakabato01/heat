@@ -1,5 +1,5 @@
 Character:
-character\character_guitarist_highHT.md
+character\team_highschool\character_guitarist_highHT.md
 
 World:
 world\world_baseline.md

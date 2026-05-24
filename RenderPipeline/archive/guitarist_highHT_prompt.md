@@ -1,7 +1,3 @@
-# ==================================================
-# CHARACTER
-# ==================================================
-
 # CHARACTER
 
 STATUS: CHARACTER
@@ -18,32 +14,33 @@ heat-reactive electric combat student
 ## [Silhouette]
 
 slender feminine body,
-long messy black hair with dyed red inner highlights,
-oversized school jacket silhouette,
-short skirt combined with performance gear,
-electric guitar carried diagonally across body,
-unstable forward-leaning combat posture
+long black ponytail,
+black sailor uniform silhouette,
+short pleated skirt,
+red electric guitar carried diagonally across body,
+lightweight energetic posture
 
 ---
 
 ## [RecognitionZone]
 
-red-black electric guitar,
-burn marks around fingertips,
-school uniform partially modified into stagewear,
-glowing electrical cracks surrounding legs and arms during high HT,
-loose necktie constantly shifting from static discharge,
-visible electric arcs erupting around body during combat climax
+bright excited smile,
+direct eye contact toward viewer,
+long ponytail swinging during movement,
+black sailor uniform with short skirt,
+knee-high black stockings,
+short canvas sneakers,
+visible electrical current surrounding body and guitar during combat
 
 ---
 
 ## [LockedElements]
 
-electric guitar weapon,
-modified school uniform,
-red-black palette,
-high-voltage electrical discharge effects,
-high-HT unstable performance identity
+red electric guitar,
+black sailor uniform,
+long ponytail,
+electrical discharge effects,
+high-HT performance identity
 
 ---
 
@@ -51,39 +48,36 @@ high-HT unstable performance identity
 
 ## [Behavior]
 
-normally quiet and detached,
-maintains low-energy posture outside combat,
-begins moving aggressively once HT rises,
-combat rhythm based on live guitar performance,
-attacks generated through amplified strumming,
-feedback resonance,
-speaker-wave vibration,
-electrical explosions
+constantly energetic movement,
+maintains lively performance rhythm during combat,
+attacks generated through amplified guitar strumming,
+feedback vibration,
+electrical resonance,
+rapid movement synchronization
 
-high HT state causes emotional suppression systems to collapse,
-creating violent stage-like battlefield behavior
+high HT state increases movement speed and electrical output,
+causing unstable current to spread around nearby space
 
 movement becomes:
 
-reckless,
 fast,
+playful,
 electrically unstable
 
 ---
 
 ## [Presence]
 
-projects emotional pressure similar to overwhelming live music volume,
-feels isolated from surrounding people,
-high HT state transforms battlefield into unstable electrical zone,
-presence resembles overloaded concert equipment moments before explosion
+high HT state transforms nearby space into unstable electrical performance zone,
+electrical arcs continuously spread from guitar and body,
+battlefield pressure increases through sound and electrical buildup
 
 presence direction:
 
-lonely,
-violent,
-electrically overheated,
-performance-addicted
+energetic,
+unstable,
+high-output,
+performance-focused
 
 ---
 
@@ -91,47 +85,45 @@ performance-addicted
 
 ## [Outfit]
 
-modified dark school uniform,
-oversized black jacket worn off-shoulder,
-short pleated skirt layered with combat shorts,
-ripped stockings,
-heavy stage boots,
-multiple guitar picks attached around belt,
-portable amplifier fixed near lower back
+black sailor uniform top,
+short pleated skirt,
+knee-high black stockings,
+short canvas sneakers,
+fingerless gloves,
+lightweight performance accessories
 
 outfit designed for:
 
 combat mobility,
-stage readability,
-high-HT performance instability
+performance readability,
+high-speed movement
 
 ---
 
 ## [MechanicalParts]
 
-portable HT amplifier system mounted behind waist,
-electrical stabilizers embedded near shoulders,
-visible conductive wiring around forearms,
-small overheating vents integrated beneath collarbone area
+portable HT amplifier attached near waist,
+small electrical stabilizers embedded near shoulders,
+conductive wiring integrated around guitar connection points
 
-high HT state causes stabilization systems to fail,
-creating uncontrolled electric explosions around nearby space
+high HT state causes stabilization systems to overload,
+creating visible electric arcs around body
 
 ---
 
 ## [Material]
 
-burned synthetic fabric,
-scratched leather surfaces,
+smooth school-uniform fabric,
+scratched guitar coating,
 matte industrial metal,
-heat-damaged conductor material,
-glossy electrical insulation textures
+glossy electrical insulation textures,
+heat-reactive conductive surfaces
 
 surface behavior emphasizes:
 
-electrical overload,
-heat instability,
-high-speed performance readability
+electrical readability,
+movement clarity,
+heat instability
 
 ---
 
@@ -140,43 +132,42 @@ high-speed performance readability
 primary:
 
 black,
-dark red
+red
 
 secondary:
 
 white,
-gray
+dark gray
 
 accent:
 
 electric blue,
-bright white plasma,
+white electrical sparks,
 high HT electric glow
 
 palette direction:
 
-violent,
-urban,
-stage-like,
-overheated,
-high-contrast
+clean,
+high-contrast,
+energetic,
+electrically unstable
 
 ---
 
 ## [Details]
 
-electrical sparks constantly leaking from guitar strings,
-damaged school ID hanging from jacket,
-burn scars visible along fingers and wrists,
-audio-wave distortion appearing around attacks,
-temporary blackout flickers generated during strongest attacks,
-electrical explosions leaving scorched marks across battlefield surfaces
+bright smiling expression during combat,
+electrical sparks leaking from guitar strings,
+light burn marks near fingertips,
+small electric arcs wrapping around legs and arms,
+soundwave distortion generated during strongest attacks,
+temporary flickering lights caused by electrical overload
 
 detail density focused around:
 
-hands,
+face,
 guitar,
-spine,
+hands,
 electrical discharge regions
 
 ---
@@ -185,12 +176,11 @@ electrical discharge regions
 
 ## [SuppressionRules]
 
-avoid clean idol aesthetics,
-avoid magical music themes,
-avoid pristine school uniform presentation,
-avoid soft moe-style proportions,
-avoid futuristic military armor dominance,
-avoid losing high-HT electrical instability readability
+avoid heavy military styling,
+avoid fantasy bard aesthetics,
+avoid excessive cybernetic body replacement,
+avoid oversized armor silhouette,
+avoid losing schoolgirl performance readability
 
 ---
 
@@ -203,251 +193,3 @@ identity
 > behavioral readability
 > surface readability
 > decorative detail
-
-
-# ==================================================
-# WORLD
-# ==================================================
-
-# WORLD
-
-STATUS: WORLD
-SCOPE: UNIVERSAL
-
-## [CivilizationStructure]
-
-large-scale synthetic infrastructure,
-persistent automated industrial systems,
-post-human maintenance civilization,
-low civilian population density
-
----
-
-## [ArchitectureLanguage]
-
-massive functional megastructures,
-large uninterrupted industrial surfaces,
-infrastructure-oriented architecture,
-restrained structural variation
-
----
-
-## [EnvironmentalCondition]
-
-aged synthetic materials,
-soft environmental wear,
-controlled structural decay,
-low contamination density
-
----
-
-## [WorldDensity]
-
-large open pathways,
-sparse environmental occupation,
-reduced object clutter,
-stable environmental spacing
-
----
-
-## [AtmosphereBase]
-
-quiet operational stillness,
-low emotional saturation,
-restrained environmental tension,
-persistent systemic activity
-
----
-
-# RULES
-
-## [SuppressionRules]
-
-avoid excessive environmental storytelling,
-avoid emotional atmosphere overload,
-avoid decorative civilization clutter,
-avoid cinematic destruction emphasis
-
----
-
-## [Priority]
-
-world readability
-> structural coherence
-> environmental stability
-> atmosphere
-> decorative detail
-
-
-# ==================================================
-# VISUAL
-# ==================================================
-
-# VISUAL
-
-STATUS: VISUAL
-SCOPE: UNIVERSAL
-
-## [RenderingDensity]
-
-restrained visual density,
-controlled rendering complexity,
-low visual noise,
-stable readability priority
-
----
-
-## [SurfaceLanguage]
-
-matte industrial surface response,
-soft environmental material variation,
-controlled reflectivity,
-grounded material readability
-
----
-
-## [LightingLanguage]
-
-soft controlled exposure,
-restrained contrast structure,
-stable facial readability,
-low cinematic aggression
-
----
-
-## [SpatialComposition]
-
-large negative space,
-stable subject separation,
-controlled environmental spacing,
-readable silhouette framing
-
----
-
-## [ForegroundStructure]
-
-minimal foreground obstruction,
-clean visual layering,
-restrained depth clutter,
-stable environmental readability
-
----
-
-## [SubjectPlacement]
-
-off-center positioning,
-environment-supported framing,
-stable visual hierarchy,
-controlled spatial balance
-
----
-
-## [FramingLanguage]
-
-wide observational framing,
-moderate viewing distance,
-restrained cinematic pressure,
-stable environmental observation
-
----
-
-## [PerspectiveBehavior]
-
-controlled perspective distortion,
-natural spatial compression,
-low-angle aggression suppression,
-stable environmental geometry
-
----
-
-## [MotionBehavior]
-
-minimal motion intensity,
-stable visual tracking,
-restrained camera movement,
-controlled cinematic motion
-
----
-
-# RULES
-
-## [SuppressionRules]
-
-avoid dramatic cinematic pressure,
-avoid excessive emotional framing,
-avoid unstable composition,
-avoid spectacle-first rendering,
-avoid aggressive contrast behavior
-
----
-
-## [Priority]
-
-subject readability
-> silhouette clarity
-> spatial stability
-> rendering coherence
-> cinematic restraint
-
-
-# ==================================================
-# RULES
-# ==================================================
-
-# RULE STACK
-
-STATUS: GLOBAL
-SCOPE: UNIVERSAL
-
-# OWNERSHIP
-
-## Character Owns
-
-- identity
-- silhouette
-- recognition
-- posture
-- behavior
-
----
-
-## World Owns
-
-- civilization structure
-- architecture
-- environmental condition
-- atmosphere baseline
-
----
-
-## Visual Owns
-
-- rendering interpretation
-- scene composition
-- camera observation
-- readability control
-
----
-
-# GLOBAL SUPPRESSION
-
-## [SuppressionRules]
-
-avoid ownership overlap,
-avoid emotional overcompression,
-avoid silhouette collapse,
-avoid excessive decorative density,
-avoid uncontrolled cinematic pressure
-
----
-
-# GLOBAL PRIORITY
-
-## [Priority]
-
-identity stability
-> silhouette readability
-> world readability
-> environmental coherence
-> rendering stability
-
