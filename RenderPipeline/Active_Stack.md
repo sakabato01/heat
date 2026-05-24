@@ -1,11 +1,11 @@
 Character:
-CHARACTER
+character\character_guitarist_highHT.md
 
 World:
-WORLD
+world\world_baseline.md
 
 Visual:
-VISUAL
+visual\visual_baseline.md
 
 Rules:
-RULES
+rules\rules_baseline.md

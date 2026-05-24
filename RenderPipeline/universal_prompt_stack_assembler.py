@@ -1,5 +1,3 @@
-# universal_prompt_stack_assembler.py
-
 from pathlib import Path
 
 
@@ -7,33 +5,66 @@ from pathlib import Path
 # ROOT
 # =========================================================
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.resolve()
+
+STACK_FILE = ROOT / "Active_Stack.md"
+
+OUTPUT_FILE = ROOT / "prompt.md"
 
 
 # =========================================================
-# ACTIVE STACK
+# STACK PARSER
 # =========================================================
 
-ACTIVE_STACK = [
-    "CHARACTER",
-    "WORLD",
-    "VISUAL",
-    "RULES",
-]
+def parse_stack(text: str) -> dict:
+
+    stack = {}
+
+    current_section = None
+
+    for raw_line in text.splitlines():
+
+        line = (
+            raw_line
+            .strip()
+            .replace("\ufeff", "")
+        )
+
+        # Skip empty
+        if not line:
+            continue
+
+        # Skip comments
+        if line.startswith("#"):
+            continue
+
+        # New section
+        if line.endswith(":"):
+
+            current_section = line[:-1].strip()
+
+            stack[current_section] = []
+
+            continue
+
+        # Module entry
+        if current_section:
+
+            stack[current_section].append(line)
+
+    return stack
 
 
 # =========================================================
 # MODULE LOADER
 # =========================================================
 
-def load_module(name: str) -> str:
-    """
-    Load a markdown module from local directory.
-    """
+def load_module(relative_path: str) -> str:
 
-    path = ROOT / f"{name}.md"
+    path = ROOT / relative_path
 
     if not path.exists():
+
         raise FileNotFoundError(
             f"Module not found: {path}"
         )
@@ -47,20 +78,33 @@ def load_module(name: str) -> str:
 # PROMPT BUILD
 # =========================================================
 
-def build(stack: list[str]) -> str:
-    """
-    Assemble final prompt stack.
-    """
+def build(stack: dict) -> str:
 
     blocks = []
 
-    for module_name in stack:
+    for section_name, modules in stack.items():
 
-        content = load_module(module_name)
+        blocks.append(
+            "# =================================================="
+        )
 
-        blocks.append(content)
+        blocks.append(
+            f"# {section_name.upper()}"
+        )
 
-    return "\n\n".join(blocks)
+        blocks.append(
+            "# ==================================================\n"
+        )
+
+        for module_path in modules:
+
+            content = load_module(module_path)
+
+            blocks.append(content)
+
+            blocks.append("\n")
+
+    return "\n".join(blocks)
 
 
 # =========================================================
@@ -69,14 +113,15 @@ def build(stack: list[str]) -> str:
 
 def export_prompt(text: str):
 
-    output_path = ROOT / "FINAL_PROMPT.md"
-
-    output_path.write_text(
+    OUTPUT_FILE.write_text(
         text,
         encoding="utf-8"
     )
 
-    print(f"[OK] Exported: {output_path}")
+    print("===================================")
+    print("Prompt assembly completed.")
+    print(f"Output: {OUTPUT_FILE}")
+    print("===================================")
 
 
 # =========================================================
@@ -85,10 +130,26 @@ def export_prompt(text: str):
 
 def main():
 
-    final_prompt = build(ACTIVE_STACK)
+    if not STACK_FILE.exists():
+
+        raise FileNotFoundError(
+            f"Stack file not found: {STACK_FILE}"
+        )
+
+    stack_text = STACK_FILE.read_text(
+        encoding="utf-8"
+    )
+
+    stack = parse_stack(stack_text)
+
+    final_prompt = build(stack)
 
     export_prompt(final_prompt)
 
+
+# =========================================================
+# ENTRY
+# =========================================================
 
 if __name__ == "__main__":
     main()
