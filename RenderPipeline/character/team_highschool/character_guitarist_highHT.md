@@ -8,73 +8,157 @@ SCOPE: CHARACTER_RUNTIME
 female high school student guitarist,
 human teenage girl,
 street-performance-oriented combat musician,
-mid-HT combat tendency
+high-HT combat tendency
 
 ---
 
 ## [Silhouette]
 
 medium-height female body,
-slender but active physique,
-single-side long ponytail,
+slender but slightly restless physique,
+long messy black hair with blue inner highlights,
 dynamic asymmetrical hair silhouette,
 school-uniform-based silhouette,
-guitar carried close to body,
-fast swinging posture tendency
+electric guitar almost constantly carried close to body,
+slightly nervous forward-leaning posture tendency
 
 ---
 
 ## [RecognitionZone]
 
-long side ponytail,
-cat-shaped hair accessories,
+long black hair with blue inner highlights,
+black-and-blue electric guitar,
 white sailor uniform,
 black necktie,
-black short skirt,
+short black skirt,
 knee-high black stockings,
-damaged short canvas shoes,
-black-and-blue electric guitar,
-frequent forward-leaning performance posture
+slightly worn sneakers,
+frequent posture of clutching guitar close to chest,
+often avoids direct eye contact
 
 ---
 
 ## [LockedElements]
 
-single-side ponytail,
-cat hair accessories,
+black-and-blue electric guitar,
 white sailor uniform structure,
-black-and-blue guitar,
-black necktie,
-worn-out footwear,
-youthful overcommitted performance energy
+blue-highlighted black hair,
+school-life street performance identity,
+overcommitted emotional performance tendency,
+recognition-seeking personality direction
 
 ---
 
-# BEHAVIOR
+# PERSONALITY
 
 ## [Behavior]
 
-normally quiet and shy,
-often holds her guitar close while softly standing and playing,
-avoids drawing attention to herself outside of performance,
-looks like someone cautiously waiting for acknowledgement,
-loves playing guitar because it was the first thing that made people recognize her,
-maintains a restrained and emotionally contained posture at low HT,
-as HT rises, her playing gradually becomes more intense and unstable,
-becomes increasingly absorbed in the music during combat,
-loses awareness of her surroundings as performance emotion escalates,
-combat rhythm slowly overtakes emotional self-control
+normally talkative but visibly nervous,
+often continues speaking while avoiding eye contact,
+behaves like someone constantly worried about being disliked,
+
+afraid of loneliness,
+but also embarrassed by openly seeking attention or affection,
+
+habitually carries her guitar while commuting to and from school,
+treats the instrument almost like emotional support,
+
+outside combat,
+maintains restrained emotional output,
+rarely performs aggressively unless emotionally overwhelmed,
+
+street-performance habits remain visible even during casual behavior,
+frequently grips guitar picks unconsciously,
+lightly taps rhythm patterns with fingers while thinking,
+
+enjoys playing guitar because performance was one of the few ways
+people openly reacted to her existence,
+
+wants everyone to like her,
+but feels too embarrassed to say it directly,
+
+fears rejection,
+failure,
+and being emotionally ignored,
+
+gives the impression of a nervous dog quietly waiting for praise or approval
 
 ---
 
 ## [Presence]
 
-restless youthful energy,
-emotionally noisy but not hostile,
-high-HT unstable enthusiasm,
-socially expressive presence,
-gives the impression of someone desperately trying to reach people through sound,
-combat atmosphere feels loud, emotional, and physically committed
+emotionally restless youthful atmosphere,
+socially expressive but hesitant presence,
+gives the impression of someone constantly trying to emotionally reach others,
+
+presence feels emotionally noisy,
+attention-seeking,
+but not aggressive,
+
+creates subtle emotional pressure similar to live street performance heard from nearby city alleys,
+
+presence direction:
+
+restless,
+recognition-seeking,
+emotionally expressive,
+overcommitted,
+youthfully unstable
+
+---
+
+# COMBAT
+
+## [CombatRole]
+
+aggressive forward-pressure rushdown fighter,
+electrical momentum, 
+
+focuses on:
+
+continuous forward aggression,
+electrical pressure spread,
+close-range combat 
+
+---
+
+## [CombatBehavior]
+
+favors forward movement during combat,
+maintains pressure through continuous movement attacks,
+frequently closes distance while attacking,
+
+combat rhythm synchronized with live guitar performance,
+
+uses strumming to generate electrical attacks,
+attacks while sliding,
+rushing,
+jumping,
+
+combat movement gradually becomes rougher and less controlled
+as emotional intensity rises,
+
+fighting style resembles someone emotionally throwing themselves directly into the battlefield
+
+---
+
+## [WeaponSignature]
+
+black-and-blue electric guitar used as both performance instrument and close-range combat weapon,
+
+signature combat language includes:
+
+strumming,
+electrical shockwave generation,
+guitar swings,
+electrically charged forward-rush attacks,
+
+weapon usage emphasizes:
+
+performance momentum,
+emotional output,
+pressure,
+physical commitment
 
 ---
 
@@ -82,13 +166,15 @@ combat atmosphere feels loud, emotional, and physically committed
 
 ## [Outfit]
 
-white short sailor-style school uniform,
+white sailor-style school uniform,
 black necktie,
 short black skirt,
 knee-high black stockings,
-worn and partially torn short canvas shoes,
-slightly loose uniform fit for movement,
-school-uniform silhouette remains readable during combat
+slightly worn sneakers,
+slightly oversized outer jacket,
+guitar strap almost constantly worn across body,
+
+outfit silhouette remains readable during both daily life and combat situations
 
 ---
 
@@ -100,35 +186,65 @@ none
 
 ## [Material]
 
-soft cotton fabric,
-slightly worn school uniform texture,
+soft cotton school uniform fabric,
+slightly worn leather guitar strap,
+scratched guitar surface coating,
 matte black stockings,
-scratched guitar surface,
 rubber-worn sneakers,
-light metallic guitar hardware,
-surface wear concentrated around hands, sleeves, and shoes
+industrial metallic guitar hardware,
+
+surface wear concentrated around:
+
+hands,
+guitar edges,
+shoes,
+sleeves
 
 ---
 
 ## [Color]
 
-white dominant outfit palette,
-black secondary contrast,
-blue highlight accents on guitar,
-small metallic silver hardware details,
-overall restrained cool-tone palette
+primary:
+
+white,
+black
+
+secondary:
+
+electric blue,
+gray
+
+accent:
+
+bright blue electrical highlights,
+white electrical glow,
+metallic silver hardware
+
+palette direction:
+
+urban,
+youthful,
+emotionally overheated,
+street-performance-oriented,
+cool-tone high contrast
 
 ---
 
 ## [Details]
 
-small cat-shaped hair clips,
 minor scratches and sticker residue on guitar body,
-shoe edges visibly damaged,
-black guitar strap,
-subtle finger-wear marks from excessive playing,
+subtle finger wear caused by excessive playing,
 slight clothing disorder from constant movement,
-performance-oriented hand posture
+guitar picks frequently attached around belt or pockets,
+visible cable organization around amplifier equipment,
+frequent unconscious performance posture even outside combat,
+
+detail density focused around:
+
+hands,
+guitar,
+waist equipment,
+performance interaction regions
 
 ---
 
@@ -139,9 +255,10 @@ performance-oriented hand posture
 avoid idol-style purity presentation,
 avoid excessive gothic decoration,
 avoid oversized weapon proportions,
-avoid hyper-mature body styling,
 avoid military aesthetics,
-avoid unreadable accessory clutter
+avoid hyper-mature body styling,
+avoid unreadable accessory clutter,
+avoid embedding HT escalation directly into baseline personality
 
 ---
 
@@ -150,6 +267,7 @@ avoid unreadable accessory clutter
 identity
 > silhouette
 > recognition
-> behavioral readability
+> personality readability
+> combat readability
 > surface readability
 > decorative detail
