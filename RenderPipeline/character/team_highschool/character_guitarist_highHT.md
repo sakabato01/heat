@@ -63,7 +63,6 @@ but also embarrassed by openly seeking attention or affection,
 habitually carries her guitar while commuting to and from school,
 treats the instrument almost like emotional support,
 
-outside combat,
 maintains restrained emotional output,
 rarely performs aggressively unless emotionally overwhelmed,
 
@@ -112,12 +111,12 @@ youthfully unstable
 ## [CombatRole]
 
 aggressive forward-pressure rushdown fighter,
-electrical momentum, 
+forward momentum, 
 
 focuses on:
 
-continuous forward aggression,
-electrical pressure spread,
+burst forward aggression,
+pressure spread,
 close-range combat 
 
 ---
@@ -125,20 +124,15 @@ close-range combat
 ## [CombatBehavior]
 
 favors forward movement during combat,
-maintains pressure through continuous movement attacks,
+maintains pressure through instant movement attacks,
 frequently closes distance while attacking,
 
 combat rhythm synchronized with live guitar performance,
 
-uses strumming to generate electrical attacks,
+uses strumming to generate attacks,
 attacks while sliding,
 rushing,
-jumping,
-
-combat movement gradually becomes rougher and less controlled
-as emotional intensity rises,
-
-fighting style resembles someone emotionally throwing themselves directly into the battlefield
+jumping
 
 ---
 
@@ -149,14 +143,14 @@ black-and-blue electric guitar used as both performance instrument and close-ran
 signature combat language includes:
 
 strumming,
-electrical shockwave generation,
+shockwave generation,
 guitar swings,
-electrically charged forward-rush attacks,
+forward-rush attacks,
 
 weapon usage emphasizes:
 
 performance momentum,
-emotional output,
+shockwave output,
 pressure,
 physical commitment
 
@@ -211,20 +205,14 @@ black
 
 secondary:
 
-electric blue,
+light blue,
 gray
-
-accent:
-
-bright blue electrical highlights,
-white electrical glow,
-metallic silver hardware
 
 palette direction:
 
 urban,
 youthful,
-emotionally overheated,
+emotionally unstable youthfulness,
 street-performance-oriented,
 cool-tone high contrast
 

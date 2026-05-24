@@ -5,9 +5,9 @@ SCOPE: CHARACTER_RUNTIME
 
 ## [CoreIdentity]
 
-human street-performance highschool student,
-HT-adaptive bass performer,
-heat-synchronization combat civilian
+human highschool street performer,
+bass guitarist combat civilian,
+urban rhythm-oriented fighter
 
 ---
 
@@ -17,63 +17,113 @@ long dyed blonde hair,
 athletic feminine body,
 loose oversized streetwear silhouette,
 bass guitar carried low near waist,
-relaxed unstable posture,
-recognizable instrument-focused combat profile
+slightly forward-leaning posture,
+recognizable instrument-centered profile
 
 ---
 
 ## [RecognitionZone]
 
 bright blonde twin-tail extensions,
-chewing gum expression,
 oversized yellow varsity jacket,
 black electric bass with scratched surface,
-large urban headphones resting around neck,
-small electrical sparks appearing around strings during performance
+fingerless gloves
 
 ---
 
 ## [LockedElements]
 
 blonde hair,
-bass guitar weapon,
-yellow-black color anchor palette,
+black bass guitar,
+yellow-black color identity,
 street-performance silhouette,
-music-driven combat movement language
+instrument-centered combat readability
 
 ---
 
-# BEHAVIOR
+# PERSONALITY
 
 ## [Behavior]
 
-constantly shifting body rhythm,
-weight rarely fully stabilized,
-casual provocative posture,
-uses bass rhythm as combat synchronization control,
-attacks emerge from amplified strumming,
-speaker vibration,
-heavy low-frequency impact,
-rhythm distortion
+constantly shifting body weight,
+rarely remains fully still,
+casual provocative posture tendency,
+naturally follows internal rhythm while moving,
+frequently taps fingers or feet unconsciously,
+maintains relaxed
 
-movement rhythm becomes smoother and more aggressive in mid HT state
+movement language feels:
 
-bass performance occasionally generates minor electrical sparks around fingers and strings
+loose,
+rhythmic,
+street-oriented,
+improvised
 
 ---
 
 ## [Presence]
 
-projects energetic urban pressure,
-socially loud but emotionally difficult to fully approach,
-mid HT creates highly synchronized flow-state presence,
-feels constantly in-motion even while idle
+often occupies social space without asking permission,
+easily draws visual attention in public spaces,
+appears socially expressive but emotionally difficult to fully approach,
+creates atmosphere through movement and rhythm rather than direct communication
 
 presence direction:
 
 playful,
-unstable,
-heat-synchronized confidence
+restless,
+confident,
+socially noisy
+
+---
+
+# COMBAT
+
+## [CombatRole]
+
+rhythm-control close-range fighter,
+instrument-based pressure combatant,
+continuous tempo-maintenance combat style
+
+focuses on:
+
+combat rhythm control,
+pressure persistence,
+close-range disruption,
+movement synchronization
+
+---
+
+## [CombatBehavior]
+
+maintains movement while attacking,
+rarely commits to fully stationary actions,
+uses bass guitar as primary combat interaction tool,
+combines body rhythm with attack timing,
+prefers continuous pressure over singular heavy strikes
+
+combat movement language:
+
+flowing,
+persistent,
+tempo-driven,
+performance-oriented
+
+---
+
+## [WeaponSignature]
+
+low-position electric bass combat style,
+wide strumming attack motion,
+speaker-amplified impact delivery,
+instrument-centered attack readability,
+recognizable performance-based combat motion
+
+bass interaction emphasizes:
+
+rhythm,
+motion continuity,
+physical swing readability
 
 ---
 
@@ -82,43 +132,40 @@ heat-synchronized confidence
 ## [Outfit]
 
 oversized yellow varsity jacket,
-black cropped inner shirt,
-short pleated skirt combined with combat shorts,
-street performer utility belt,
+white cropped inner shirt,
+black shot skirt
+short pleated skirt layered with combat shorts,
+street utility belt,
 fingerless gloves,
-reinforced knee protection,
 high-top urban sneakers
 
-outfit designed for:
+outfit structure prioritizes:
 
-live performance movement,
-combat mobility,
-heat-intensive rhythm control
+movement freedom,
+performance readability,
+streetwear identity
 
 ---
 
 ## [MechanicalParts]
 
-minimal visible mechanical structures,
-portable bass amplifier mounted near waist,
-heat synchronization bands embedded around wrists and ankles,
-small HT stabilization injectors visible near lower back
+none
 
 ---
 
 ## [Material]
 
-mixed fabric and synthetic sports material,
-slightly glossy heat-reactive surfaces,
-rubberized footwear structure,
+mixed fabric and synthetic sports materials,
+slightly worn urban textures,
+rubberized footwear surfaces,
 scratched instrument coating,
-urban performance texture language
+soft reflective synthetic details
 
-surface behavior prioritizes:
+material direction:
 
-movement readability,
-instrument readability,
-heat buildup visibility
+urban,
+performative,
+physically active
 
 ---
 
@@ -132,20 +179,18 @@ black
 secondary:
 
 white,
-neon orange
+desaturated gray
 
 accent:
 
-small electrical sparks,
-amber HT synchronization light,
-subtle bass-feedback glow
+amber,
+subtle orange
 
 palette direction:
 
 urban,
-energetic,
-high-visibility,
-mid-HT readable
+high-contrast,
+performance-readable
 
 ---
 
@@ -153,17 +198,16 @@ mid-HT readable
 
 stickers attached to bass body,
 graffiti markings on jacket sleeves,
-scratched sneaker soles,
-small sparks generated during bass attacks,
-subtle analog distortion appearing around low-frequency impacts,
-temporary soundwave distortion effects generated by amplified performance
+scratched sneaker surfaces,
+worn fabric edges,
+small accessory chains attached near waist
 
 detail density focused around:
 
 hands,
-bass guitar,
-speaker zones,
-movement regions
+instrument,
+waist region,
+movement zones
 
 ---
 
@@ -172,11 +216,11 @@ movement regions
 ## [SuppressionRules]
 
 avoid idol-style purity,
-avoid magical girl styling,
-avoid excessive tactical military gear,
-avoid heavy cybernetic body replacement,
-avoid overcomplicated silhouette fragmentation,
-avoid losing bass-performance combat readability
+avoid magical-girl styling,
+avoid excessive tactical military equipment,
+avoid heavy cybernetic replacement,
+avoid silhouette fragmentation,
+avoid embedding HT-state behavior into baseline character definition
 
 ---
 
@@ -184,8 +228,8 @@ avoid losing bass-performance combat readability
 
 identity
 > silhouette
-> bass-combat readability
 > recognition
-> behavioral readability
+> personality readability
+> combat readability
 > surface readability
 > decorative detail
