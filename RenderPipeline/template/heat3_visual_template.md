@@ -9,16 +9,49 @@ Defines final visual interpretation.
 
 This layer controls:
 
-- rendering language
+- rendering medium
 - scene composition
 - camera interpretation
+- motion presentation
+- animation readability
 
-This layer defines HOW the world is visually observed.
+This layer defines HOW the world is visually experienced.
 
 This layer must NOT define:
 
 - character identity
 - civilization structure
+- combat mechanics
+- emotional narrative
+
+---
+
+# MEDIUM
+
+## [MediumDeclaration]
+
+Defines:
+
+- rendering medium identity
+- animation stylization behavior
+- photorealism suppression level
+
+Controls:
+
+- anime readability
+- visual abstraction consistency
+- rendering stylization stability
+
+Recommended Direction:
+
+- 2D anime frame rendering
+- hand-drawn anime visual language
+- stylized cel-animation shading
+- graphic shape readability
+- anime color separation
+- non-photorealistic rendering
+- animation-first rendering behavior
+- illustrative environmental simplification
 
 ---
 
@@ -30,12 +63,20 @@ Defines:
 
 - visual density
 - rendering complexity
-- noise restraint
+- detail concentration behavior
 
 Controls:
 
 - rendering readability
+- motion clarity
 - visual stability
+
+Recommended Direction:
+
+- controlled visual density
+- focused rendering readability
+- restrained environmental clutter
+- selective high-intensity detailing
 
 ---
 
@@ -43,14 +84,22 @@ Controls:
 
 Defines:
 
-- global material response
-- environmental surface behavior
-- lighting-material interaction
+- stylized material grouping
+- environmental texture abstraction
+- surface simplification behavior
 
 Controls:
 
-- rendering coherence
-- material readability
+- shape readability
+- material separation
+- anime surface consistency
+
+Recommended Direction:
+
+- stylized industrial surface grouping
+- simplified material separation
+- graphic environmental abstraction
+- restrained texture realism
 
 ---
 
@@ -58,15 +107,23 @@ Controls:
 
 Defines:
 
-- exposure structure
-- contrast philosophy
-- illumination readability
+- lighting stylization
+- contrast escalation behavior
+- emotional illumination response
 
 Controls:
 
 - facial readability
 - visual hierarchy
-- cinematic restraint
+- anime cinematic behavior
+
+Recommended Direction:
+
+- stylized anime lighting
+- responsive contrast behavior
+- emotion-aware lighting shifts
+- controlled highlight bloom
+- non-photorealistic exposure behavior
 
 ---
 
@@ -77,13 +134,21 @@ Controls:
 Defines:
 
 - spatial arrangement
-- negative space distribution
-- subject spacing
+- environmental breathing space
+- silhouette isolation behavior
 
 Controls:
 
-- composition readability
-- frame stability
+- frame readability
+- environmental rhythm
+- subject clarity
+
+Recommended Direction:
+
+- large negative space
+- dynamic subject separation
+- breathing environmental spacing
+- clear silhouette priority
 
 ---
 
@@ -91,14 +156,22 @@ Controls:
 
 Defines:
 
-- foreground layering
-- obstruction control
-- environmental separation
+- foreground motion layering
+- obstruction behavior
+- depth framing intensity
 
 Controls:
 
-- subject readability
-- depth organization
+- depth readability
+- cinematic layering
+- animation motion framing
+
+Recommended Direction:
+
+- light foreground motion presence
+- layered anime-style depth framing
+- controlled environmental overlap
+- selective visual obstruction
 
 ---
 
@@ -107,13 +180,21 @@ Controls:
 Defines:
 
 - subject positioning
-- isolation emphasis
-- environmental framing balance
+- framing rhythm
+- environmental integration behavior
 
 Controls:
 
 - visual hierarchy
-- composition stability
+- composition balance
+- emotional frame flow
+
+Recommended Direction:
+
+- off-center cinematic positioning
+- motion-responsive framing
+- environment-assisted composition
+- dynamic visual balance
 
 ---
 
@@ -124,13 +205,21 @@ Controls:
 Defines:
 
 - framing philosophy
-- viewing distance
-- cinematic pressure
+- emotional camera responsiveness
+- cinematic observation behavior
 
 Controls:
 
-- emotional viewing distance
+- viewing distance emotion
+- anime camera identity
 - cinematic readability
+
+Recommended Direction:
+
+- anime handheld framing
+- responsive cinematic observation
+- moderate framing instability
+- emotion-following camera behavior
 
 ---
 
@@ -138,14 +227,22 @@ Controls:
 
 Defines:
 
-- perspective distortion behavior
-- spatial compression tendency
-- angle aggression level
+- perspective escalation behavior
+- spatial distortion response
+- kinetic exaggeration tendency
 
 Controls:
 
-- perspective stability
+- action readability
 - spatial interpretation
+- motion intensity
+
+Recommended Direction:
+
+- controlled dynamic perspective
+- situational perspective escalation
+- motion-aware spatial distortion
+- temporary kinetic exaggeration
 
 ---
 
@@ -154,13 +251,47 @@ Controls:
 Defines:
 
 - camera motion intensity
-- tracking behavior
-- movement readability
+- tracking responsiveness
+- cinematic movement escalation
 
 Controls:
 
-- cinematic stability
-- motion clarity
+- movement readability
+- animation energy behavior
+- kinetic clarity
+
+Recommended Direction:
+
+- responsive motion intensity
+- tracked kinetic movement
+- controlled camera follow motion
+- situational cinematic escalation
+
+---
+
+# RUNTIME
+
+## [RuntimeEscalation]
+
+Defines:
+
+- temporary cinematic escalation behavior
+- emotional rendering amplification
+- high-intensity runtime override
+
+Controls:
+
+- HT escalation
+- combat rendering
+- emotional visual destabilization
+
+Recommended Direction:
+
+- temporary contrast escalation
+- controlled FX amplification
+- emotional motion amplification
+- runtime-only cinematic aggression
+- reversible visual destabilization
 
 ---
 
@@ -168,18 +299,20 @@ Controls:
 
 ## [SuppressionRules]
 
-avoid chaotic framing,
-avoid excessive cinematic aggression,
-avoid unstable composition,
-avoid unreadable lighting contrast,
-avoid spectacle-first rendering
+avoid photorealistic material dominance,
+avoid unreadable visual overload,
+avoid uncontrolled FX saturation,
+avoid silhouette destruction,
+avoid incoherent spatial collapse,
+avoid permanent cinematic escalation
 
 ---
 
 ## [Priority]
 
-subject readability
+anime readability
+> subject readability
+> emotional motion clarity
 > silhouette clarity
-> spatial stability
-> rendering coherence
-> cinematic intensity
+> spatial coherence
+> cinematic responsiveness

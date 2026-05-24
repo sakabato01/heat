@@ -3,29 +3,6 @@
 STATUS: VISUAL
 SCOPE: UNIVERSAL
 
-## Purpose
-
-Defines final visual interpretation.
-
-This layer controls:
-
-- rendering medium
-- scene readability
-- cinematic observation language
-- animation presentation behavior
-- motion interpretation
-
-This layer defines HOW the world is visually experienced.
-
-This layer must NOT define:
-
-- character identity
-- civilization structure
-- combat mechanics
-- emotional narrative
-
----
-
 # MEDIUM
 
 ## [MediumDeclaration]
@@ -38,10 +15,6 @@ anime color separation priority,
 non-photorealistic rendering,
 animation-first rendering behavior,
 illustrative environmental simplification
-
----
-
-# RENDERING
 
 ## [RenderingDensity]
 
@@ -69,15 +42,12 @@ non-product-rendered instruments
 
 ## [LightingLanguage]
 
-stylized anime lighting,
+soft cinematic exposure,
 responsive contrast behavior,
-emotion-aware illumination shifts,
-controlled highlight bloom,
-non-photorealistic exposure behavior
+emotion-aware lighting shifts,
+controlled highlight bloom
 
 ---
-
-# SCENE
 
 ## [SpatialComposition]
 
@@ -100,13 +70,11 @@ selective visual obstruction
 ## [SubjectPlacement]
 
 off-center cinematic positioning,
-motion-aware framing balance,
+motion-responsive framing,
 environment-assisted composition,
-dynamic visual hierarchy
+dynamic visual balance
 
 ---
-
-# CAMERA
 
 ## [FramingLanguage]
 
@@ -129,21 +97,9 @@ temporary kinetic exaggeration
 ## [MotionBehavior]
 
 responsive motion intensity,
-stable kinetic readability,
+tracked kinetic movement,
 controlled camera follow motion,
 situational cinematic escalation
-
----
-
-# RUNTIME
-
-## [RuntimeEscalation]
-
-temporary contrast escalation,
-controlled FX amplification,
-emotional motion amplification,
-runtime-only cinematic aggression,
-reversible visual destabilization
 
 ---
 
@@ -151,7 +107,7 @@ reversible visual destabilization
 
 ## [SuppressionRules]
 
-avoid photorealistic material dominance,
+avoid unreadable visual overload,
 avoid uncontrolled FX saturation,
 avoid silhouette destruction,
 avoid incoherent spatial collapse,
@@ -161,9 +117,8 @@ avoid permanent cinematic escalation
 
 ## [Priority]
 
-anime readability
-> subject clarity
+subject readability
+> emotional motion clarity
 > silhouette clarity
-> motion readability
 > spatial coherence
 > cinematic responsiveness
