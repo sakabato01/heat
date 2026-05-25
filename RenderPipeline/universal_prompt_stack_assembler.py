@@ -13,6 +13,23 @@ OUTPUT_FILE = ROOT / "prompt.md"
 
 
 # =========================================================
+# ASSEMBLY ORDER
+# =========================================================
+
+# Diffusion-friendly ordering.
+# Earlier layers establish context.
+# Later layers increasingly override generation behavior.
+
+ASSEMBLY_ORDER = [
+    "WORLD",
+    "VISUAL",
+    "CHARACTER",
+    "OUTPUT",
+    "RULES"
+]
+
+
+# =========================================================
 # STACK PARSER
 # =========================================================
 
@@ -41,7 +58,11 @@ def parse_stack(text: str) -> dict:
         # New section
         if line.endswith(":"):
 
-            current_section = line[:-1].strip()
+            current_section = (
+                line[:-1]
+                .strip()
+                .upper()
+            )
 
             stack[current_section] = []
 
@@ -75,25 +96,40 @@ def load_module(relative_path: str) -> str:
 
 
 # =========================================================
-# PROMPT BUILD
+# SECTION HEADER
+# =========================================================
+
+def section_header(name: str) -> str:
+
+    return "\n".join([
+        "# ==================================================",
+        f"# {name}",
+        "# ==================================================\n"
+    ])
+
+
+# =========================================================
+# BUILD
 # =========================================================
 
 def build(stack: dict) -> str:
 
     blocks = []
 
-    for section_name, modules in stack.items():
+    for section_name in ASSEMBLY_ORDER:
+
+        # Skip missing sections
+        if section_name not in stack:
+            continue
+
+        modules = stack[section_name]
+
+        # Skip empty sections
+        if not modules:
+            continue
 
         blocks.append(
-            "# =================================================="
-        )
-
-        blocks.append(
-            f"# {section_name.upper()}"
-        )
-
-        blocks.append(
-            "# ==================================================\n"
+            section_header(section_name)
         )
 
         for module_path in modules:
@@ -104,11 +140,11 @@ def build(stack: dict) -> str:
 
             blocks.append("\n")
 
-    return "\n".join(blocks)
+    return "\n".join(blocks).strip()
 
 
 # =========================================================
-# OUTPUT
+# EXPORT
 # =========================================================
 
 def export_prompt(text: str):
