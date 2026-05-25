@@ -3,43 +3,6 @@
 STATUS: CHARACTER
 SCOPE: CHARACTER_RUNTIME
 
-## Purpose
-
-Defines character-side existence.
-
-This layer controls:
-
-- identity
-- silhouette
-- recognition
-- baseline personality
-- passive behavioral language
-- surface organization
-
-This layer defines:
-
-> WHO the character is.
-
-This layer must remain stable
-across:
-
-- heat variation
-- combat escalation
-- rendering variation
-- cinematic interpretation
-- scene context
-
-This layer must NOT define:
-
-- HT state behavior
-- combat escalation logic
-- cinematic intensity
-- temporary emotional overload
-- heat amplification behavior
-
----
-
-# IDENTITY
 
 ## [CoreIdentity]
 

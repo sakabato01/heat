@@ -1,4 +1,4 @@
-STATUS: CANON
+STATUS: ARCHIVE
 SCOPE: HEAT1
 
 # Main Cast Detailed Character Design Reference

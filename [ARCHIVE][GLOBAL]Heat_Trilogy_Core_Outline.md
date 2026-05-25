@@ -1,5 +1,7 @@
-STATUS: CANON
+STATUS: ARCHIVE
 SCOPE: GLOBAL
+DO NOT USE AS REFERENCE
+
 
 # Heat Trilogy Core Outline V1
 Heat Trilogy 核心大綱
@@ -58,37 +60,12 @@ Heat世界收尾方案（修正版）
 
 包含：
 
-青春組
-依存／街頭組
-神性機械組
+不同的許多陣營
 
 核心是：
 
 「不同的人如何與Heat共存」
-青春組
 
-主題：
-
-被看見
-青春燃燒
-live
-情緒失衡
-依存／街頭組
-
-主題：
-
-Heat依賴
-都市夜晚
-慢性磨耗
-活著但回不去
-神性機械組
-
-主題：
-
-同步文明
-Heat秩序
-穩定與人格
-神性控制
 第二層：混搭組
 
 不同陣營開始交錯。
