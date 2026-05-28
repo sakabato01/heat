@@ -1,6 +1,9 @@
 STATUS: CHARACTER
 SCOPE: HEAT1,TEAMHIGHSCHOOL
 ---
+# 代號
+FEEDBACK
+---
 女性高中生吉他手
 人類少女
 以街頭演出為導向的戰鬥音樂人

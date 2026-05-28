@@ -1,6 +1,9 @@
 STATUS: CHARACTER
 SCOPE: HEAT1,TEAMHIGHSCHOOL
 ---
+# 代號
+LOVESICK
+---
 女性地下偶像
 高中少女
 街頭演出型偶像

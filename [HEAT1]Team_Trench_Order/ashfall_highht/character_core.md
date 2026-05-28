@@ -1,7 +1,9 @@
 STATUS: CHARACTER
 SCOPE: HEAT1,TEAMTRENCHORDER
 ---
-
+# 代號
+ASHFALL
+---
 人類成年女子
 工業壕溝生存者
 長期過熱運轉
