@@ -1,8 +1,5 @@
 STATUS: CHARACTER
-SCOPE: HEAT1,TEAMUNDERCITY
----
-# 代號
-LUCID
+SCOPE: HEAT1
 ---
 人類成年女子
 藥物戒斷症狀

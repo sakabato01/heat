@@ -1,8 +1,5 @@
 STATUS: CHARACTER
-SCOPE: HEAT1,TEAMFROSTORDER
----
-# 代號
-STILLBLADE
+SCOPE: HEAT1
 ---
 人類成年女子
 宗教文明騎士
@@ -10,8 +7,6 @@ STILLBLADE
 低HT戰鬥傾向
 ---
 # HT 傾向（角色本質）
-
-低HT性格
 
 核心的一句話是：
 
@@ -54,7 +49,7 @@ STILLBLADE
 - 謾罵敵人
 - 沉浸在攻擊中而忘記防守
 
-## Crash:
+## Crash
 
 - 短暫跪地並伴隨低聲禱告
 - 表情虔誠
@@ -114,6 +109,7 @@ STILLBLADE
 - 冷靜且受控制
 - 對命令絕對服從
 - 頭髮綁得過度整齊
+---
 
 # 行為
 - 站姿穩定，幾乎像雕像
