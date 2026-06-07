@@ -4,6 +4,19 @@ DO NOT USE AS PRIMARY REFERENCE
 
 # Heat System Design
 
+## 已發現問題
+
+Switch Skill
+
+目前定位：
+Combo Tool
+
+是否保留：
+待灰盒驗證
+
+若角色本體已足夠有趣，
+可能改為純換人系統
+
 # 1. 核心戰鬥哲學
 
 ## 遊戲類型
