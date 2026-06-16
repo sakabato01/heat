@@ -12,6 +12,7 @@ The coin is flying.
 還沒決定
 還能更好
 還能再賭一次
+
 # Core Fantasy
 
 「不是射中敵人。」
