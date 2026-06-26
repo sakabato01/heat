@@ -7,7 +7,7 @@ SCOPE: HEAT1
 
 ## 核心概念
 
-PYRE為高HT人格角色
+ZAN為高HT人格角色
 
 透過
 
