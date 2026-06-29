@@ -139,16 +139,22 @@ Higher-resolution illustrations may contain additional detail, but must preserve
 
 Every playable character should satisfy:
 
-✓ Recognizable silhouette at gameplay scale
+✓ Hero Art preserves intended character proportion and personality.
 
-✓ Visual head mass within specification
+✓ Scale Reference matches Hero Art body proportion.
 
-✓ Mature adult body proportion
+✓ Recognizable silhouette at gameplay scale.
 
-✓ Clear pelvis position
+✓ Visual head mass within specification.
 
-✓ Long readable legs
+✓ Mature adult body proportion.
 
-✓ Weapon silhouette remains dominant
+✓ Clear pelvis position.
 
-✓ Standing, running and attacking animations preserve overall proportion
+✓ Long readable legs.
+
+✓ Weapon silhouette remains dominant.
+
+✓ Standing, running and attacking animations preserve overall proportion.
+
+✓ Runtime states preserve character readability and body proportion.
