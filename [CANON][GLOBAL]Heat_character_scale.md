@@ -158,3 +158,9 @@ Every playable character should satisfy:
 ✓ Standing, running and attacking animations preserve overall proportion.
 
 ✓ Runtime states preserve character readability and body proportion.
+
+# Every visual element on this board must be rendered in the same pixel art style.
+
+# Do not mix anime illustration with pixel art.
+
+# The hero artwork must be a high-resolution pixel art illustration, not a painted concept art.
