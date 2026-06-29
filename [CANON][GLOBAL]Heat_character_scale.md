@@ -6,102 +6,149 @@ These rules are mandatory unless explicitly overridden by the design document.
 
 ---
 
-## Character Scale
+# Character Height
 
-Character body height (excluding weapons, hair extensions, cloth physics, effects):
-
-**100–120 px**
-
-Recommended default:
+Character body height
+(excluding weapons, effects, cloth physics and floating accessories)
 
 **108 px**
 
----
-
-## Head
-
-Head height:
-
-**18–22 px**
-
-Recommended default:
-
-**20 px**
-
-The head should preserve sufficient pixel density for:
-
-* facial silhouette
-* hairstyle
-* glasses / eyepatch
-* basic facial expression
-
-Do not reduce head size to artificially increase body proportions.
+This height is fixed for all standard humanoid playable characters.
 
 ---
 
-## Body Proportion
+# Visual Head Mass
 
-Upper body:
+Visual head height is measured from:
 
-Approximately **40%**
+- highest visible hair pixel
+- to lowest chin pixel
 
-Lower body:
+Hair, bangs and fixed head ornaments are included.
 
-Approximately **60%**
+Target height:
 
-The waist should sit relatively high.
+**15 px**
 
-Legs should appear longer than realistic human anatomy to improve visual readability.
+Allowed range:
 
----
+**14–16 px**
 
-## Arms
+The visual head mass should remain compact.
 
-Arm length:
+Hair volume should expand primarily sideways rather than upward whenever possible.
 
-Approximately **38–42 px**
-
-Hands may be slightly oversized to improve attack readability.
-
-Attack animations may exaggerate arm length through perspective or pose.
+Large hairstyles must preserve the intended visual head proportion.
 
 ---
 
-## Weapons
+# Body Proportion
 
-Weapon size is determined by gameplay readability rather than realistic proportion.
+Target proportion:
 
-Recommended weapon height:
+- Head Mass : **~14%**
+- Upper Body : **~30%**
+- Lower Body : **~70%**
 
-**90%–120%** of character height.
+Recommended values:
 
-Oversized weapons are acceptable when they improve silhouette and combat identity.
+| Section | Height |
+|---------|--------|
+| Visual Head | 15 px |
+| Upper Body | 32 px |
+| Lower Body | 76 px |
 
----
+The upper body is measured from the bottom of the chin to the crotch / pelvis.
 
-## Readability Priority
-
-Allocate pixel detail in the following priority:
-
-1. Head
-2. Weapon
-3. Hands
-4. Feet
-5. Costume details
-
-Silhouette and gameplay readability always take precedence over clothing detail.
+The lower body is measured from pelvis to the bottom of the feet.
 
 ---
 
-## Design Philosophy
+# Pelvis Position
 
-Character proportions are designed for gameplay readability rather than anatomical realism.
+The pelvis should appear visually high.
 
-The scale should support:
+Characters should present:
 
-* clear silhouette recognition
-* readable combat poses
-* strong weapon identity
-* consistent animation production across all playable characters
+- long legs
+- short torso
+- mature adult proportions
 
-All character concepts should conform to this specification before detailed costume design begins.
+Do not lower the pelvis to compensate for clothing.
+
+---
+
+# Arm Length
+
+Approximate arm length:
+
+**40 px**
+
+When standing naturally:
+
+- fingertips should reach the upper thigh
+- arms should never appear disproportionately short relative to the legs
+
+---
+
+# Clothing Rules
+
+Costume design must not significantly alter perceived body proportion.
+
+Avoid:
+
+- oversized skirts that visually lower the pelvis
+- excessively long jackets that hide waist position
+- hairstyles that excessively increase visual head height
+
+Preferred solutions:
+
+- raise waistline
+- shorten torso silhouette
+- emphasize leg length
+- expand silhouettes horizontally instead of vertically
+
+---
+
+# Gameplay Readability
+
+Character readability has higher priority than anatomical accuracy.
+
+Silhouette should primarily be recognizable through:
+
+- weapon
+- pose
+- body movement
+- costume silhouette
+
+rather than facial detail.
+
+---
+
+# Pixel Density Philosophy
+
+HEAT prioritizes gameplay readability over illustration fidelity.
+
+Character personality should remain recognizable even under limited pixel density.
+
+Higher-resolution illustrations may contain additional detail, but must preserve this proportion system.
+
+---
+
+# Validation Checklist
+
+Every playable character should satisfy:
+
+✓ Recognizable silhouette at gameplay scale
+
+✓ Visual head mass within specification
+
+✓ Mature adult body proportion
+
+✓ Clear pelvis position
+
+✓ Long readable legs
+
+✓ Weapon silhouette remains dominant
+
+✓ Standing, running and attacking animations preserve overall proportion

@@ -1,6 +1,7 @@
 STATUS: CHARACTER
 SCOPE: HEAT1
 ---
+LOVEBOMB
 年輕女性
 年輕街頭偶像
 街頭演出型女性偶像

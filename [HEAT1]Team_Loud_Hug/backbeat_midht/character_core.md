@@ -1,6 +1,7 @@
 STATUS: CHARACTER
 SCOPE: HEAT1
 ---
+BACKBEAT
 人類高中女子街頭表演者
 貝斯吉他戰鬥型平民
 都市節奏導向戰士
