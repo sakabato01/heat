@@ -67,6 +67,52 @@ Low、Mid、High 人格代表不同的收益曲線形態，而非單純的強弱
 
 若在理性玩家假設下，系統能推導出多個合理且具有競爭力的最佳工作區，則人格區分具有成立基礎。
 
+---
+
+然而，Reward Curve 與 Risk Curve 只能回答：
+
+> **玩家應該待在哪個 Heat 區間最有利。**
+
+它們無法回答另一個同樣重要的問題：
+
+> **玩家在實際戰鬥中，為什麼會自然停留於某個 Heat 區間？**
+
+因此，Heat System 引入第二個獨立模型：
+
+## Combat Loop
+
+Combat Loop 描述角色在正常遊玩時，最有收益的戰鬥循環（Reward Loop）。
+
+角色會透過不同的攻擊、防禦、格檔、迴避等循環，不斷累積或消耗 Heat。
+
+Heat 的變化並非來自角色人格本身，而是來自玩家持續重複的戰鬥循環。
+
+因此：
+
+> 不同角色的人格，將引導玩家建立不同的 Combat Loop。
+
+而不同的 Combat Loop，又會自然形成不同的 Heat 收支（Heat Economy）。
+
+例如：
+
+* 積極行為比例較高的 Combat Loop，將自然提高 Average HT。
+* 消極行為比例較高的 Combat Loop，將自然降低 Average HT。
+
+因此：
+
+角色人格
+→ Reward Curve
+→ Combat Loop
+→ Heat Economy
+→ Average HT
+→ Operating Range
+
+Combat Loop 並非取代 Reward Curve，而是描述玩家如何在戰鬥中逐漸收斂至角色預期的 Operating Range。
+
+最終，Heat System 並非要求玩家刻意維持某個 Heat 數值，而是透過角色的 Reward Curve 與 Combat Loop，共同引導玩家自然形成符合角色人格的戰鬥節奏。
+
+因此，每個角色的人格，不僅代表不同的收益曲線，也代表不同的戰鬥循環。
+
 ## HEAT Validation Metrics
 
 1. Average HT
@@ -324,7 +370,7 @@ UI 視覺語意偏向：
 但：
 
 * Crash風險將急速增加
-* 被命中/被Counter時crash
+* 被Counter時crash
 * Heat超過100%時將直接觸發Crash
 
 ### Crash狀態
@@ -429,7 +475,6 @@ Crash不會禁止角色戰鬥。
 
 進入高Heat過熱區間(80% - 100%)時若：
 
-* 被命中
 * 被Counter
 * Heat條增加到超過100%
 
@@ -460,7 +505,6 @@ Crash不會禁止角色戰鬥。
 ### Heat下降
 
 - 被敵人攻擊命中
-- 被敵人攻擊counter
 - 自然下降
 - 消極行動
 
@@ -474,7 +518,7 @@ Crash不會禁止角色戰鬥。
 * 衝刺
 
 自然下降或消極行動皆不會將Heat降到低於20%
-將heat降到低於20%的方法是被攻擊命中
+將heat降到低於20%的方法是被攻擊命中/counter
 
 
 ### 不增減Heat
@@ -489,9 +533,18 @@ Crash不會禁止角色戰鬥。
 
 Counter 並非反擊攻擊。
 
-Counter 為：
+Counter 為 Hit 的特殊情況（Special Hit）。
 
-#### 於目標攻擊準備動作、攻擊動作、收招動作期間成功命中。
+當單位於攻擊準備、攻擊中或收招期間被成功命中時，
+此次 Hit 視為 Counter。
+
+因此：
+
+Hit
+├─ Normal Hit
+└─ Counter Hit
+
+Counter 並非獨立攻擊種類，而是具有額外效果的 Hit。
 
 代表：
 
@@ -503,7 +556,7 @@ Counter發生時：
 
 * 被Counter者產生更大硬直
 * 更容易被追擊
-* 被counter者損失HP以及HT
+* 被counter者損失HP
 
 並伴隨：
 
@@ -617,7 +670,7 @@ Heat升高：
 
 高Heat時：
 
-* 更容易因命中／被Counter導致 Crash
+* 可能因被Counter/HT > 100 導致 Crash
 
 ---
 
