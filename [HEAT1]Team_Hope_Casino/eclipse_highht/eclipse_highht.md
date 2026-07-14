@@ -7,7 +7,7 @@ SCOPE: HEAT1
 
 ## 核心概念
 
-PILE BUNKER 為高HT人格角色。
+Eclipse為高HT人格角色。
 
 戰鬥圍繞：
 
