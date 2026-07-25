@@ -9,6 +9,8 @@ SCOPE: HEAT1
 
 Eclipse為高HT人格角色。
 
+核心子系統為clean hit
+
 戰鬥圍繞：
 
 - Condition
