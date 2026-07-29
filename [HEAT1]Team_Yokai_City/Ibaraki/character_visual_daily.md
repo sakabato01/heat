@@ -3,15 +3,13 @@ SCOPE: HEAT1
 
 ---
 
-ECLIPSE 為年輕人類女性
-年齡約為20歲上下
+
 
 ---
 
 # 角色外觀（Character Visual）
 
 ## 輪廓（Silhouette）
-
 
 
 ## 臉部
@@ -21,9 +19,7 @@ ECLIPSE 為年輕人類女性
 ## 髮型
 
 
-
 ## 服裝（Outfit）
-
 
 
 ---
@@ -31,11 +27,9 @@ ECLIPSE 為年輕人類女性
 # 氛圍（Presence）
 
 
-
 ---
 
 # 行為（Behavior）
-
 
 
 ---
@@ -43,13 +37,11 @@ ECLIPSE 為年輕人類女性
 # 細節（Details）
 
 
-
 ---
 
 ## 色彩（Color）
 
 主色：
-
 
 
 --- 
