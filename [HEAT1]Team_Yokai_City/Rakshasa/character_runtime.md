@@ -2,7 +2,7 @@ STATUS: CHARACTER
 SCOPE: HEAT1
 
 ---
-# 當下 HT 狀態（Runtime）
+# 當下狀態（Runtime）
 
 ## LOW HT
 
