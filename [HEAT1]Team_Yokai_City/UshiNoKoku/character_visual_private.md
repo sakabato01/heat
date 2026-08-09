@@ -1,11 +1,11 @@
 STATUS: CHARACTER
 SCOPE: HEAT1
+
 ---
 
 # 角色外觀（Character Visual）
 
 ## 輪廓（Silhouette）
-
 
 
 ## 臉部
@@ -18,11 +18,12 @@ SCOPE: HEAT1
 
 ## 服裝（Outfit）
 
-### 外層上衣
+### 外套
 
 
 
-### 內層上衣
+### 上半身
+
 
 
 ### 下半身
@@ -32,11 +33,8 @@ SCOPE: HEAT1
 
 
 
-### 裝備
-
-
-
 ## 細節
+
 
 
 --- 
