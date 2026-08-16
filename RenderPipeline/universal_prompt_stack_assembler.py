@@ -21,11 +21,9 @@ OUTPUT_FILE = ROOT / "prompt.md"
 # Later layers increasingly override generation behavior.
 
 ASSEMBLY_ORDER = [
+    "CHARACTER",
     "WORLD",
     "VISUAL",
-    "CHARACTER",
-    "OUTPUT",
-    "RULES"
 ]
 
 
@@ -96,19 +94,6 @@ def load_module(relative_path: str) -> str:
 
 
 # =========================================================
-# SECTION HEADER
-# =========================================================
-
-def section_header(name: str) -> str:
-
-    return "\n".join([
-        "# ==================================================",
-        f"# {name}",
-        "# ==================================================\n"
-    ])
-
-
-# =========================================================
 # BUILD
 # =========================================================
 
@@ -127,10 +112,6 @@ def build(stack: dict) -> str:
         # Skip empty sections
         if not modules:
             continue
-
-        blocks.append(
-            section_header(section_name)
-        )
 
         for module_path in modules:
 

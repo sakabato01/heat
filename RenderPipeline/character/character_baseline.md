@@ -1,0 +1,8 @@
+1girl, solo, 
+young_female, 
+long_hair, Black hair, 
+slender, tall, medium_boob, 
+long_legs, 
+white bikini top, white bikini bottom, 
+Red nails, 
+looking_at_viewer, 
