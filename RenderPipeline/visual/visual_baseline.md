@@ -1,4 +1,5 @@
 2D anime character, 
 ultra thin linework, 
-anime handheld framing, 
-responsive cinematic observation, 
+cel shading, 
+graphic shape readability, 
+non-photorealistic rendering, 

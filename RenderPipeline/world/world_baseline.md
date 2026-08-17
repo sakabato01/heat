@@ -1,4 +1,4 @@
-large-scale synthetic infrastructure, 
-persistent automated industrial systems, 
-post-human maintenance civilization.
+large-scale infrastructure, 
+automated industrial systems, 
+human civilization, 
  

@@ -5,4 +5,4 @@ World:
 world/world_baseline.md
 
 Visual:
-visual/visal_baseline_anime_handheld.md
+visual/visual_baseline.md
