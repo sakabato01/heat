@@ -21,9 +21,9 @@ OUTPUT_FILE = ROOT / "prompt.md"
 # Later layers increasingly override generation behavior.
 
 ASSEMBLY_ORDER = [
+    "VISUAL",
     "CHARACTER",
     "WORLD",
-    "VISUAL",
 ]
 
 

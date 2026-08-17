@@ -1,5 +1,5 @@
-2D anime character, 
+1girl, solo, 
+official artwork, 2D anime character, 
 ultra thin linework, 
 cel shading, 
-graphic shape readability, 
-non-photorealistic rendering, 
+front view straight on, fullshot, fullbody, natural light, 
