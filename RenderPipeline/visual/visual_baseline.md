@@ -1,5 +1,2 @@
 1girl, solo, 
-official artwork, 2D anime character, 
-ultra thin linework, 
-cel shading, 
-front view straight on, fullshot, fullbody, natural light, 
+official artwork, 
