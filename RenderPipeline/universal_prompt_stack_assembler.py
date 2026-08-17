@@ -90,7 +90,7 @@ def load_module(relative_path: str) -> str:
 
     return path.read_text(
         encoding="utf-8"
-    ).strip()
+    )
 
 
 # =========================================================
@@ -103,13 +103,11 @@ def build(stack: dict) -> str:
 
     for section_name in ASSEMBLY_ORDER:
 
-        # Skip missing sections
         if section_name not in stack:
             continue
 
         modules = stack[section_name]
 
-        # Skip empty sections
         if not modules:
             continue
 
@@ -119,9 +117,7 @@ def build(stack: dict) -> str:
 
             blocks.append(content)
 
-            blocks.append("\n")
-
-    return "\n".join(blocks).strip()
+    return "\n".join(blocks)
 
 
 # =========================================================
