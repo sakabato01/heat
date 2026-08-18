@@ -11,3 +11,4 @@ industrial, cityscape,
 Background are large buildings. 
 low brightness background. 
 low chroma background. 
+A large horizontal red band running through the center of frame. 
