@@ -1,4 +1,4 @@
-large-scale infrastructure, 
-automated industrial systems, 
-human civilization, 
- 
+industrial, cityscape, 
+Background are large buildings. 
+low brightness background. 
+low chroma background. 
