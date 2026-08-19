@@ -1,6 +1,5 @@
 STATUS: CHARACTER
 SCOPE: HEAT1
-
 ---
 
 # Gameplay Design
