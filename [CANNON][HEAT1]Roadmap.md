@@ -75,24 +75,23 @@ WW1惡魔戰爭
 * rakshasa
 * tengu
 * yuki
-* kama
+* gumo
 
-未完成
+完成外觀設計，缺乏gameplay設計
 
 ## 敵方角色:
 * shuten
 * dodomeki
-* ushi(待定)
-* ibaraki+丑時之女
-* 待定
+* kiyohime
+* ibaraki
 
-未完成
+完成外觀設計，缺乏gameplay設計
 
 # 預計修改：
-1. 完成YokaiCity外觀設計與Gameplay設計
-2. workflow更改，因此forst order, loud hug, assault legion, under city均需要重做。
-3. undercity/lucid可能需要完整重作
-4. 未有敵方角色的陣營需要完成敵方設計
+1. 完成YokaiCityGameplay設計
+2. workflow更改，因此forst order, loud hug, assault legion, under city均需要重做
+3. 未有敵方角色的陣營需要完成敵方設計
+4. under city將吸納未來機械仙俠的設計變成近未來科技武俠風格
 
 # 預計新增陣營:
 
@@ -100,8 +99,19 @@ WW1惡魔戰爭
 
 我方:
 * 劍宗
-* 氣宗
+* 唐門
 
 2. 未來海洋羅馬騎士
+
 我方：待定
 敵方：克蘇魯
+
+3. 機械廢土
+
+我方：近距離重拳風格的機械女性
+敵方：巨大機械都市
+
+4. 希望賭場
+
+我方：使用槍鬥術、硬幣、左輪槍射擊的機械女性
+敵方：賭場
