@@ -87,8 +87,9 @@ SCOPE: GLOBAL
 
 ## 攻擊屬性
 * Airborne：角色由地面進入空中
-* Grounded：角色回到地面
-* Launch：敵人浮空
+* Grounded：角色由空中進入地面
+* Launch：敵人由地面進入空中
+* Slammed：敵人由空中進入地面
 * Knockback：敵人被吹飛
 * Projectile：產生飛行道具
 
