@@ -1,145 +1,167 @@
-STATUS: CHARACTER
-SCOPE: HEAT1
+STATUS: CHARACTER  
+SCOPE: HEAT1  
 
 ---
 
 # Gameplay Design
 
-## 核心概念
-收傘＝進攻。
-開傘＝防禦／範圍控制。
+## 角色系統
+
+### 霜雪
+
+格檔 / 閃避成功將累積霜雪,  
+消耗霜雪凍結敵人或產生風雪
 
 ---
 
-# 普通攻擊 (X)
+## 普通攻擊
 
-## 核心概念
+### ← / N / → + X
 
+- X1: 單手二連刺擊 (Hit:2) 
+- X2: 下段交叉二連打擊 (Hit:2) 
+- X3: 轉身二連橫掃打擊 (Hit:2) 
+- X4: 突進開傘撞擊 (Hit:1, Knockback) 
 
----
-
-## 地面普通攻擊
-
-### 上X
-
-
----
-
-### X
-
-
----
-
-### 下X
-
+* Xn Recovery 允許 Xn+1 cancel
+* 格檔 Recovery > X, 從X3開始
+* X1 ~ X3 Recovery 允許以下 cancel
+    * ↑ + X
+    * ↓ + X
+    * ← / N / → + Y
 
 ---
 
-## 空中普通攻擊
+### ↑ + X
 
-### 空中上X
+- X1: 雙手上撈打擊 (Hit:1, Launch)
 
-
----
-
-### 空中X
-
+* X1 Recovery 允許以下 cancel
+    * ↑ + Y
+    * Jump
 
 ---
 
-### 空中下X
+### ↓ + X
 
-
----
-
-# 特殊攻擊 (Y)
-
-
-
-
-# 格檔
-
-遵守基礎格檔規則。
+- X1: 後退橫掃 (Hit:1)
+* X1 Recovery 允許以下 cancel
+    * ↓ + Y
 
 ---
 
-# 衝刺
+## 特殊攻擊
 
-遵守基礎衝刺規則。
+消耗霜雪, 受擊敵人增加額外 Recovery
 
+### ← / N / → + Y
+
+- X1 > Y1: 中距離冰刃射擊 (Hit:2, Projectile)
+- X2 > Y2: 跳躍開傘上擊 (Hit:2, Airborne)
+- X3 > Y3: 轉身開傘橫掃 (Hit:2, Knockback)
 
 ---
 
-# Heat互動
+### ↑ + Y
 
-## Heat強化
+- ↑ + X1 > Y1: 近距離生成冰柱上推 (Hit:2, Launch)
 
-X：主要快速攻擊
-Y：重攻擊
-B：格檔
-方向＋X：方向攻擊
-方向＋Y：方向性重攻擊
-方向＋B：迴避／移動
+---
 
-X 與 Y 攻擊中可以透過 B Cancel，快速中斷攻擊並開傘格檔。
+### ↓ + Y
 
-X1：三連刺擊
+- ↓ + X1 > Y1: 近距離生成冰柱下砸 (Hit:2, Knockback)
 
-X2：左右斜斬
+---
 
-X3：轉身二連橫斬
+## 跳躍攻擊
 
-成功格檔／成功迴避 → 可以直接進入 X3。
+### Jump ← / N / → + X
 
-X4：收傘重揮
+- X1: 單手二連刺擊 (Hit:2) 
+- X2: 轉身二連橫掃打擊 (Hit:2)
+- X3: 開傘撞擊 (Hit:1, Knockback) 
 
-↑X：撈擊
+* Xn Recovery 允許 Xn+1 cancel
+* X1, X2 Recovery 允許以下 cancel
+    * Jump ↑ + X
+    * Jump ↓ + X
+    * Jump
 
-角色向上進行撈擊。
+---
 
-↓X：下砸
+### Jump ↑ + X
 
-角色以較強力的動作向下／近距離攻擊。
+- X1: 單手上撈打擊 (Hit:2, Launch)
+* X1 Recovery 允許以下 cancel
+    * ↑ + Y
+    * Jump
 
-空中 ↑X
+---
 
-向上撈擊，追擊空中的敵人。
-再次按 X：
+### Jump ↓ + X
 
-角色向地面刺下。
+- X1: 垂直下砸 (Hit:2)
+* X1 Recovery 允許以下 cancel
+    * ↓ + Y
+    * Jump
+    
+---
 
-Y1：向指定方向強力突刺
+## 跳躍特殊
 
-角色收著傘，朝玩家輸入的方向進行一次強力突刺。
-朝指定方向進行強力突刺。
+消耗霜雪, 受擊敵人增加額外 Recovery
 
-Y2：開傘震開
+### Jump ← / N / → + Y
 
-角色從收傘狀態打開傘，以傘面產生一次較大範圍的震開攻擊。
+- Jump ← / N / → + X1 > Y1: 中距離冰刃射擊 (Hit:2, Projectile)
+- Jump ← / N / → + X2 > Y2: 開傘上擊 (Hit:2)
 
-B｜格檔
+---
 
-雪女使用開傘作為格檔動作。
+### Jump ↑ + Y
 
-攻擊中可以迅速轉入開傘格檔。
+- Jump ↑ + X1 > Y1: 近距離生成冰柱上推 (Hit:2)
 
-目前：
+---
 
-X → B
-Y → B
-成功格檔／成功迴避 → 可以直接從 X3 進行攻擊。
+### Jump ↓ + Y
 
-反擊能量
-格檔後按住 B，可以消耗反擊能量。
-效果為：
+- Jump ↓ + X1 > Y1: 近距離生成冰柱下砸 (Hit:2, Slammed)
 
-在角色周圍炸出冰柱。
-冰柱成功後可以銜接：
+---
 
-X3
+## 格檔
 
-或：
+* 遵守共通格檔規則
+* X, Y Recovery 允許以下 cancel
+    * Block
+* Jump X, Jump Y Recovery 允許以下 cancel
+    * Jump Block
+* 格檔成功後長按格檔, 消耗霜雪在周圍產生風雪
+    * 風雪造成大範圍傷害 (Hit:3, Launch) 並且額外增加敵人 Recovery  
+    * 風雪 StartUp, Active 無敵
 
-Y1
+---
 
-高 HT 時，Y1 與 Y2 攻擊過程中會生成冰晶。增加敵人的受擊硬直時間。
+## 閃避
+
+遵守共通閃避規則
+
+---
+
+## Heat互動
+
+### Heat強化
+
+高HT時:
+* 開放以下攻擊蓄力
+    * ← / N / → + X4 (Hit:3, Knockback)
+    * ← / N / → + Y1 增加飛行道具速度 (Hit:4, Projectile)
+    * ← / N / → + Y2 (Hit:4, Launch, Airborne)
+    * ← / N / → + Y3 (Hit:4, Knockback)
+    * Jump ← / N / → + X3 (Hit:3, Knockback)
+    * Jump ← / N / → + Y1 增加飛行道具速度 (Hit:4, Projectile)
+    * Jump ← / N / → + Y2 (Hit:4, Launch)
+
+---
