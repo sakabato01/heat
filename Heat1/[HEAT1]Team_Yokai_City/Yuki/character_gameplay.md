@@ -80,7 +80,7 @@ SCOPE: HEAT1
 
 - X1: 單手二連刺擊 (Hit:2) 
 - X2: 轉身二連橫掃打擊 (Hit:2)
-- X3: 開傘撞擊 (Hit:1, Knockback) 
+- X3: 下落雙腳踩擊 (Hit:1, Grounded, Slammed) 
 
 * Xn Recovery 允許 Xn+1 cancel
 * X1, X2 Recovery 允許以下 cancel
@@ -160,7 +160,7 @@ SCOPE: HEAT1
     * ← / N / → + Y1 增加飛行道具速度 (Hit:4, Projectile)
     * ← / N / → + Y2 (Hit:4, Launch, Airborne)
     * ← / N / → + Y3 (Hit:4, Knockback)
-    * Jump ← / N / → + X3 (Hit:3, Knockback)
+    * Jump ← / N / → + X3 (Hit:3, Grounded,Slammed)
     * Jump ← / N / → + Y1 增加飛行道具速度 (Hit:4, Projectile)
     * Jump ← / N / → + Y2 (Hit:4, Launch)
 
