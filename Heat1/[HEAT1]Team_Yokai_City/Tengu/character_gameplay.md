@@ -23,6 +23,7 @@ SCOPE: HEAT1
 - X3: 單手上段交叉快速連斬 (Hit:1)  
 - X4: 雙手上撈重斬 (Hit:1)  
 - X5: 雙手袈裟重斬 (Hit:1, Knockback)  
+
 * Xn Recovery 允許 Xn+1 cancel  
 * OnHit: X1 ~ X3 Recovery 允許以下 cancel 
     * ← / N / → + Y  
@@ -53,6 +54,7 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - X1: 單手拔刀上撈跳斬 (Hit:1, +Aerial:Character/Enemy)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * Jump ← / N / → + Y  
     * Jump ↓ + Y  
@@ -60,6 +62,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - X1: 背身跳躍上撈翼斬 (Hit:2, +Aerial:Character)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * Jump ← / N / → + Y  
     * Jump ↓ + Y  
@@ -74,6 +77,7 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - X1: 拔刀單手上撈斬 (Hit:1, +Aerial:Enemy)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * ← / N / → + Y  
     * ↑ + Y  
@@ -82,6 +86,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - X1: 上撈翼斬 (Hit:2)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * ← / N / → + Y  
     * ↑ + Y  
@@ -98,11 +103,13 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - Y1: 突進翼斬 (Hit:1)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * ← / N / → + X  
     
 黑翼架式:  
 - Y1: 突進斬擊 (Hit:1)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * ← / N / → + X  
 
@@ -112,6 +119,7 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - Y1: 斜上方突進翼斬 (Hit:1, +Aerial:Character/Enemy)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↓ + X  
@@ -119,6 +127,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - Y1: 斜上方突進斬擊 (Hit:1, +Aerial:Character/Enemy)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↓ + X  
@@ -133,6 +142,7 @@ SCOPE: HEAT1
 - X1: 拔刀單手下段交叉二連斬 (Hit:2)  
 - X2: 單手上段斜斬 (Hit:1)  
 - X3: 單手下劈落地斬 (Hit:1, -Aerial:Character/Enemy)  
+
 * Xn Recovery 允許 Xn+1 cancel  
 * OnHit: X1, X2 Recovery 允許以下 cancel  
     * Jump ↓ + Y  
@@ -145,6 +155,7 @@ SCOPE: HEAT1
 - X1: 單翼旋身下段斜向二連翼斬 (Hit:2, +Aerial:Enemy)  
 - X2: 中下段二連側身踢擊 (Hit:2)  
 - X3: 單翼空翻圓環下劈翼斬 (Hit:1)  
+
 * Xn Recovery 允許 Xn+1 cancel  
 * OnHit: X1, X2 Recovery 允許以下 cancel  
     * Jump ↓ + Y  
@@ -159,6 +170,7 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - X1: 拔刀單手上撈斬 (Hit:1, +Aerial:Enemy)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * Jump ↓ + Y  
     * Jump ↓ + X
@@ -166,6 +178,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - X1: 單翼旋身斜向上撈二連翼斬 (Hit:2)  
+
 * OnHit: X1 Recovery 允許以下 cancel  
     * Jump ↓ + Y  
     * Jump ↓ + X
@@ -189,6 +202,7 @@ SCOPE: HEAT1
 
 斬擊架式:  
 - Y1: 突進翼斬 (Hit:1)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↑ + X
@@ -197,6 +211,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - Y1: 突進斬擊 (Hit:1)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↑ + X
@@ -207,7 +222,8 @@ SCOPE: HEAT1
 ### Jump ↑ + Y
 
 斬擊架式:  
-- Y1: 斜上方突進翼斬 (Hit:1, +Aerial:Character/Enemy)並切換架式  
+- Y1: 斜上方突進翼斬 (Hit:1, +Aerial:Character/Enemy)並切換架式 
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↑ + X
@@ -216,6 +232,7 @@ SCOPE: HEAT1
 
 黑翼架式:  
 - Y1: 斜上方突進斬擊 (Hit:1, +Aerial:Character/Enemy)並切換架式  
+
 * OnHit: Y1 Recovery 允許以下cancel  
     * Jump ← / N / → + X  
     * Jump ↑ + X

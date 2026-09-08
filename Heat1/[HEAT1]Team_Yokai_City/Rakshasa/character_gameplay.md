@@ -24,6 +24,12 @@ SCOPE: HEAT1
 - X4: 雙手上段交叉重斬, 雙手分開收尾 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery 允許以下 cancel
+    * ↑ + X
+    * ↓ + X
+    * ←/N/→ + Y
+    * ↑ + Y
+    * Jump
 
 ---
 
@@ -33,6 +39,10 @@ SCOPE: HEAT1
 - X2: 單手斜向上撈斬 (Hit:1, +Aerial:Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery允許以下 cancel
+    * ←/N/→ + Y
+    * ↑ + Y
+    * Jump
 
 ---
 
@@ -42,6 +52,10 @@ SCOPE: HEAT1
 - X2: 雙手斜向下劈斬 (Hit:1, -Aerial:Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 允許以下 cancel
+    * ←/N/→ + Y
+    * ↑ + Y
+    * Jump
 
 ---
 
@@ -49,13 +63,23 @@ SCOPE: HEAT1
 
 ### ←/N/→ + Y
 
-- Y1: 向前突進雙手斜向重斬 (Hit:2, SuperArmor)
+- Y1: 向前突進, 雙手交替上段二連重斬 (Hit:2, SuperArmor)
+
+* Y1 Recovery 允許 以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
 
 ---
 
 ### ↑ + Y
 
-- Y1: 前上突進雙手斜向重斬 (Hit:2, SuperArmor)
+- Y1: 前上突進, 雙手交替下段二連重斬 (Hit:2, +Aerial:Character, SuperArmor)
+
+* Y1 Recovery 允許 以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
 
 ---
 
@@ -68,6 +92,13 @@ SCOPE: HEAT1
 - X3: 雙手水平交叉重斬, 雙手分開收尾 (Hit:1, +Aerial:Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery 允許以下 cancel
+    * Jump ↑ + X
+    * Jump ↓ + X
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
+    * Jump
 
 ---
 
@@ -77,6 +108,11 @@ SCOPE: HEAT1
 - X2: 單手斜向上撈斬 (Hit:1, +Aerial:Enemy) 
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery 允許以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
+    * Jump
 
 ---
 
@@ -86,6 +122,11 @@ SCOPE: HEAT1
 - X2: 單手斜向下劈斬 (Hit:1, -Aerial:Character/Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery 允許以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
+    * Jump
 
 ---
 
@@ -93,19 +134,34 @@ SCOPE: HEAT1
 
 ### Jump ←/N/→ + Y
 
-- Y1: 向前突進雙手斜向重斬 (Hit:2, SuperArmor)
+- Y1: 向前突進, 雙手交替上段二連重斬 (Hit:2, SuperArmor)
+
+* Y1 Recovery 允許 以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
 
 ---
 
 ### Jump ↑ + Y
 
-- Y1: 前上突進雙手斜向重斬 (Hit:2, SuperArmor)
+- Y1: 前上突進, 雙手交替下段二連重斬 (Hit:2, +Aerial:Character, SuperArmor)
+
+* Y1 Recovery 允許 以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
 
 ---
 
 ### Jump ↓ + Y
 
-- Y1: 前下突進雙手斜向重斬 (Hit:2, SuperArmor)
+- Y1: 前下突進, 雙手交替上段二連重斬 (Hit:2, SuperArmor)
+
+* Y1 Recovery 允許 以下 cancel
+    * Jump ←/N/→ + Y
+    * Jump ↑ + Y
+    * Jump ↓ + Y
 
 ---
 
@@ -130,4 +186,5 @@ SCOPE: HEAT1
 * OnHit: Recovery 可被以下動作 cancel
     * X / ↑ + X / ↓ + X
     * Jump
+
 ---
