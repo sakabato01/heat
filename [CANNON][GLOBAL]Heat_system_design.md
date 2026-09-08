@@ -98,12 +98,13 @@ SCOPE: GLOBAL
 * 例如: X → X → ↑X, X → X → ↓X...
 
 ## 攻擊屬性
-* Airborne: 角色由地面進入空中
-* Grounded: 角色由空中進入地面
-* Launch: 敵人由地面進入空中
-* Slammed: 敵人由空中進入地面
+* Aerial: 角色 / 敵人進入空中狀態
 * Knockback: 敵人被吹飛
 * Projectile: 產生飛行道具
+* Invincible: 無敵
+* SuperArmor: 動作不被打斷
+* OnHit: 攻擊命中敵人
+* Hit:N: 攻擊造成N次命中判定
 
 ---
 
