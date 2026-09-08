@@ -49,17 +49,19 @@ SCOPE: GLOBAL
 
 * A: 跳躍
 * ↓ + A: 從平台落下
+* 跳躍具有固定的StartUp, Active, Recovery
 
 ### 攻擊
 
-* ← / N / → + X / Y: 朝向該方向攻擊/特殊攻擊
-* ↑ + X / Y: 與上方/空中互動相關
-* ↓ + X / Y: 與下方/地面互動相關
+* ←/N/→ + X/Y: 朝向該方向攻擊/特殊攻擊
+* ↑ + X/Y: 與上方/空中互動相關
+* ↓ + X/Y: 與下方/地面互動相關
 
 ### 格檔/衝刺
 
 * B: 格檔
-* ← / → + B: 朝向該方向衝刺
+* ←/→ + B: 朝向該方向衝刺
+* 格檔/閃避具有固定的StartUp, Active, Recovery
 
 ### 格檔/閃避
 
@@ -67,12 +69,12 @@ SCOPE: GLOBAL
 * 格檔 Recovery 允許以下 cancel 
     * 格檔
     * 迴避
-    * X / Y
+    * X/Y
 * 迴避: 在判定窗口內衝刺穿過敵人攻擊
 * 迴避 Recovery 允許以下 cancel 
     * 格檔
     * 迴避
-    * X / Y
+    * X/Y
 
 ---
 
@@ -88,7 +90,7 @@ SCOPE: GLOBAL
 
 3. 限制: 
 
-* 空中跳躍 / 空中衝刺規則隨角色不同
+* 空中跳躍/空中衝刺規則隨角色不同
 
 ---
 
@@ -98,7 +100,7 @@ SCOPE: GLOBAL
 * 例如: X → X → ↑X, X → X → ↓X...
 
 ## 攻擊屬性
-* Aerial: 角色 / 敵人進入空中狀態
+* Aerial: 角色/敵人進入空中狀態
 * Knockback: 敵人被吹飛
 * Projectile: 產生飛行道具
 * Invincible: 無敵
