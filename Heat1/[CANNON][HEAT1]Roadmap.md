@@ -127,12 +127,13 @@ Radiant_Imperium vs Lost_God
 1. 完成YokaiCityGameplay設計
 2. workflow更改，因此forst order, loud hug, assault legion, under city均需要重做
 3. 未有敵方角色的陣營需要完成敵方設計
+4. Assault_Legion Zan & Pyre將需要重製
 
 # 預計新增陣營:
 
 1. 機械廢土
 
-我方：近距離重拳風格的機械女性
+我方：待定
 敵方：巨大機械都市
 
 2. 希望賭場
