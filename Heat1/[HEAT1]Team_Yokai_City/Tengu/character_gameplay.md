@@ -1,5 +1,5 @@
-STATUS: CHARACTER  
-SCOPE: HEAT1  
+STATUS: CHARACTER
+SCOPE: HEAT1
 
 ---
 
@@ -8,245 +8,205 @@ SCOPE: HEAT1
 ## 角色系統
 
 切換不同架式風格進行戰鬥
-* 斬擊架式下為斬擊攻擊
-* 黑翼架式下為近距離翼擊
+
+* 居合架式下為中距離居合斬擊
+* 持刀架式下為近距離持刀斬擊
 
 ---
 
 ## 普通攻擊
 
-### ← / N / → + X
+### ←/N/→ + X
 
-斬擊架式:  
-- X1: 拔刀單手下段交叉二連斬 (Hit:2)  
-- X2: 單手上段交叉二連斬 (Hit:2)  
-- X3: 單手上段交叉快速連斬 (Hit:1)  
-- X4: 雙手上撈重斬 (Hit:1)  
-- X5: 雙手袈裟重斬 (Hit:1, Knockback)  
+持刀架式:
 
-* Xn Recovery 允許 Xn+1 cancel  
-* OnHit: X1 ~ X3 Recovery 允許以下 cancel 
-    * ← / N / → + Y  
-    * ↑ + Y   
-    * ↑ + X  
-    * ↓ + X  
-* OnHit: X1, X4 Recovery 允許 Jump cancel  
-* OnHit: X3 Recovery 允許 Dash cancel (高HT限定)
-
-黑翼架式:  
-- X1: 突進肩撞 (Hit:2)  
-- X2: 跨步下踩 (Hit:2)  
-- X3: 旋身二連水平翼斬 (Hit:2)  
-- X4: 上段斜向翼重斬 (Hit:1, Knockback)  
+- X1: 單手中段突刺 (Hit:2)
+- X2: 單手下段交叉二連斬 (Hit:2)
+- X3: 單手上段交叉連斬 (Hit:3)
+- X4: 雙手上撈重斬 (Hit:1)
+- X5: 雙手袈裟重斬 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
-* OnHit: X1 ~ X3 Recovery 允許以下 cancel  
-    * ← / N / → + Y  
-    * ↑ + Y  
-    * ↑ + X  
-    * ↓ + X  
-    * Jump  
-    * Dash (高HT限定)  
+* OnHit: X1 ~ X3 Recovery 允許以下 cancel
+  * ←/N/→ + Y
+  * ↑ + Y
+  * ↑ + X
+  * ↓ + X
+  * Jump
+  * Dash(高HT限定)
+
+居合架式:
+
+- X1: 拔刀下段交叉斬 (Hit:2)
+- X2: 拔刀下段往復斬 (Hit:2)
+- X3: 拔刀上段重斬(Hit:1)
+- X4: 拔刀中段旋身重斬 (Hit:1, Knockback)
+
+* Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1 ~ X3 Recovery 允許以下 cancel
+  * ↑ + X
+  * ↓ + X
+  * Dash (高HT限定)
 
 ---
 
 ### ↑ + X
 
-斬擊架式:  
-- X1: 單手拔刀上撈跳斬 (Hit:1, +Aerial:Character/Enemy)  
+持刀架式:
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * Jump ← / N / → + Y  
-    * Jump ↓ + Y  
-    * Jump ← / N / → + X  
+- X1: 單手轉身上撈斬 (Hit:2, +Aerial:Enemy)
+- X2: 單手上撈跳重斬(Hit:1, +Aerial:Character/Enemy)
 
-黑翼架式:  
-- X1: 背身跳躍上撈翼斬 (Hit:2, +Aerial:Character)  
+* OnHit: X1, X2 Recovery 允許以下 cancel
+  * ←/N/→ + Y
+  * ↑ + Y
+  * Jump
+  * Dash (高HT限定)
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * Jump ← / N / → + Y  
-    * Jump ↓ + Y  
-    * Jump X  
-    * Jump ↓ + X  
-    * Jump  
-    * Jump Dash (高HT限定)  
+居合架式:
+
+- X1: 拔刀下段上撈重斬 (Hit:1, +Aerial:Enemy)
+
+* OnHit: X1 Recovery 允許以下 cancel
+  * Dash (高HT限定)
 
 ---
 
 ### ↓ + X
 
-斬擊架式:  
-- X1: 拔刀單手上撈斬 (Hit:1, +Aerial:Enemy)  
+持刀架式:
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * ← / N / → + Y  
-    * ↑ + Y  
-    * ← / N / → + X  
-    * Dash (高HT限定)  
+- X1: 單手下段轉身二連斬 (Hit:2, +Aerial:Enemy)
+- X2: 單手上段重斬 (Hit:1, -Aerial:Enemy)
 
-黑翼架式:  
-- X1: 上撈翼斬 (Hit:2)  
+* OnHit: X1, X2 Recovery 允許以下 cancel
+  * ←/N/→ + Y
+  * ↑ + Y
+  * Jump
+  * Dash (高HT限定)
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * ← / N / → + Y  
-    * ↑ + Y  
-    * ← / N / → + X  
-    * ↑ + X  
-    * Jump  
-    * Dash (高HT限定)  
+居合架式:
+
+- X1: 拔刀上段重斬 (Hit:1, -Aerial:Enemy)
+
+* OnHit: X1 Recovery 允許以下 cancel
+  * Dash (高HT限定)
 
 ---
 
 ## 特殊攻擊
 
-### ← / N / → + Y
+### ←/N/→ + Y
 
-斬擊架式:  
-- Y1: 突進翼斬 (Hit:1)並切換架式  
+- Y1: 前方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
 
-* OnHit: Y1 Recovery 允許以下cancel  
-    * ← / N / → + X  
-    
-黑翼架式:  
-- Y1: 突進斬擊 (Hit:1)並切換架式  
-
-* OnHit: Y1 Recovery 允許以下cancel  
-    * ← / N / → + X  
+* OnHit: Y1 Recovery 允許以下cancel
+  * ←/N/→ + X
 
 ---
 
 ### ↑ + Y
 
-斬擊架式:  
-- Y1: 斜上方突進翼斬 (Hit:1, +Aerial:Character/Enemy)並切換架式  
+- Y1: 前上方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
 
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↓ + X  
-    * Jump  
-
-黑翼架式:  
-- Y1: 斜上方突進斬擊 (Hit:1, +Aerial:Character/Enemy)並切換架式  
-
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↓ + X  
+* OnHit: Y1 Recovery 允許以下cancel
+  * ←/N/→ + X
 
 ---
 
 ## 跳躍攻擊
 
-### Jump ← / N / → + X
+### Jump ←/N/→ + X
 
-斬擊架式:  
-- X1: 拔刀單手下段交叉二連斬 (Hit:2)  
-- X2: 單手上段斜斬 (Hit:1)  
-- X3: 單手下劈落地斬 (Hit:1, -Aerial:Character/Enemy)  
+持刀架式:
 
-* Xn Recovery 允許 Xn+1 cancel  
-* OnHit: X1, X2 Recovery 允許以下 cancel  
-    * Jump ↓ + Y  
-    * Jump ↑ + X
-    * Jump ↓ + X
-    * Jump  
-    * Dash (高HT限定)  
+- X1: 單手下段交叉二連斬 (Hit:2)
+- X2: 單手上段斜斬 (Hit:1)
+- X3: 單手下劈落地斬 (Hit:1, -Aerial:Character/Enemy)
 
-黑翼架式:  
-- X1: 單翼旋身下段斜向二連翼斬 (Hit:2, +Aerial:Enemy)  
-- X2: 中下段二連側身踢擊 (Hit:2)  
-- X3: 單翼空翻圓環下劈翼斬 (Hit:1)  
+* Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1, X2 Recovery 允許以下 cancel
+  * Jump ←/N/→ + Y
+  * Jump ↑ + Y
+  * Jump ↓ + Y
+  * Jump ↑ + X
+  * Jump ↓ + X
+  * Jump
+  * Dash (高HT限定)
 
-* Xn Recovery 允許 Xn+1 cancel  
-* OnHit: X1, X2 Recovery 允許以下 cancel  
-    * Jump ↓ + Y  
-    * Jump ↑ + X
-    * Jump ↓ + X
-    * Jump  
-    * Dash (高HT限定)  
+居合架式:
+
+- X1: 拔刀中段水平二連橫斬 (Hit:2)
+- X2: 拔刀下劈落地重斬 (Hit:1, -Aerial:Character/Enemy)
+
+* Xn Recovery 允許 Xn+1 cancel
+* OnHit: X1 Recovery 允許以下 cancel
+  * Jump ↑ + X
+  * Jump ↓ + X
+  * Dash (高HT限定)
 
 ---
 
 ### Jump ↑ + X
 
-斬擊架式:  
-- X1: 拔刀單手上撈斬 (Hit:1, +Aerial:Enemy)  
+持刀架式:
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * Jump ↓ + Y  
-    * Jump ↓ + X
-    * Jump  
+- X1: 單手下段二連上撈斬 (Hit:2, +Aerial:Enemy)
 
-黑翼架式:  
-- X1: 單翼旋身斜向上撈二連翼斬 (Hit:2)  
+* OnHit: X1 Recovery 允許以下 cancel
+  * Jump ←/N/→ + Y
+  * Jump ↑ + Y
+  * Jump ↓ + Y
+  * Jump
+  * Dash (高HT限定)
 
-* OnHit: X1 Recovery 允許以下 cancel  
-    * Jump ↓ + Y  
-    * Jump ↓ + X
-    * Jump  
+居合架式:
+
+- X1: 拔刀上撈轉身重斬 (Hit:1)
+
+* OnHit: X1 Recovery 允許以下 cancel
+  * Dash (高HT限定)
 
 ---
 
 ### Jump ↓ + X
 
-斬擊架式:  
-- X1: 單手反握垂直下刺 (Hit:2, -Aerial:Character/Enemy)  
+持刀架式:
 
-黑翼架式:  
-- X1: 垂直下落重踩 (Hit:2, -Aerial:Character/Enemy)  
+- X1: 前翻單手垂直下連斬 (Hit:3, -Aerial:Character/Enemy)
+
+居合架式:
+
+- X1: 拔刀反握垂直下刺 (Hit:1, -Aerial:Character/Enemy)
 
 ---
 
 ## 跳躍特殊
 
-### Jump ← / N / → + Y
+### Jump ←/N/→ + Y
 
-斬擊架式:  
-- Y1: 突進翼斬 (Hit:1)並切換架式  
+- Y1: 前方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
 
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↑ + X
-    * Jump ↓ + X  
-    * Jump  
-
-黑翼架式:  
-- Y1: 突進斬擊 (Hit:1)並切換架式  
-
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↑ + X
-    * Jump ↓ + X  
+* OnHit: Y1 Recovery 允許以下cancel
+  * Jump ←/N/→ + X
 
 ---
 
 ### Jump ↑ + Y
 
-斬擊架式:  
-- Y1: 斜上方突進翼斬 (Hit:1, +Aerial:Character/Enemy)並切換架式 
+- Y1: 前上方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
 
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↑ + X
-    * Jump ↓ + X  
-    * Jump  
-
-黑翼架式:  
-- Y1: 斜上方突進斬擊 (Hit:1, +Aerial:Character/Enemy)並切換架式  
-
-* OnHit: Y1 Recovery 允許以下cancel  
-    * Jump ← / N / → + X  
-    * Jump ↑ + X
-    * Jump ↓ + X  
+* OnHit: Y1 Recovery 允許以下cancel
+  * Jump ←/N/→ + X
 
 ---
 
 ### Jump ↓ + Y
 
-斬擊架式:  
-- Y1: 斜下方突進翼斬 (Hit:1, -Aerial:Character/Enemy) 並切換架式  
+- Y1: 前下方拔刀劍氣斬擊 (Hit:2, Projectile) 並切換架式
 
-黑翼架式:  
-- Y1: 斜下方突進斬擊 (Hit:1, -Aerial:Character/Enemy) 並切換架式  
+* OnHit: Y1 Recovery 允許以下cancel
+  * Jump ←/N/→ + X
 
 ---
 
@@ -266,7 +226,6 @@ SCOPE: HEAT1
 
 ### Heat強化
 
-特定攻擊允許在高HT時Dash cancel  
+特定攻擊允許在高HT時Dash cancel
 
 ---
-
