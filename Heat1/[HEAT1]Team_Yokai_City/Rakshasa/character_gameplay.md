@@ -61,6 +61,8 @@ SCOPE: HEAT1
 
 ## 特殊攻擊
 
+消耗羅剎能量使用
+
 ### ←/N/→ + Y
 
 - Y1: 向前突進, 雙手上段重斬 (Hit:2, SuperArmor)
@@ -132,6 +134,8 @@ SCOPE: HEAT1
 
 ## 跳躍特殊
 
+消耗羅剎能量使用
+
 ### Jump ←/N/→ + Y
 
 - Y1: 向前突進, 雙手上段重斬 (Hit:2, SuperArmor)
@@ -185,6 +189,7 @@ SCOPE: HEAT1
 * 閃避動作轉換為突進旋身斬擊 (Hit:3, SuperArmor)
 * OnHit: Recovery 可被以下動作 cancel
     * X / ↑ + X / ↓ + X
+    * Jump X / Jump ↑ + X / Jump ↓ + X
     * Jump
 
 ---
