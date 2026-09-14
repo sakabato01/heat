@@ -47,6 +47,7 @@ SCOPE: HEAT1
 - X1: 後退橫掃 (Hit:1)
 * OnHit: X1 Recovery 允許以下 cancel
     * ↓ + Y
+    * Jump
 
 ---
 
@@ -70,7 +71,7 @@ SCOPE: HEAT1
 
 ### ↓ + Y
 
-- ↓ + X1 > Y1: 近距離生成冰柱下砸 (Hit:2, Knockback)
+- ↓ + X1 > Y1: 近距離生成冰柱上推 (Hit:2, +Aerial:Enemy)
 
 ---
 
@@ -81,6 +82,7 @@ SCOPE: HEAT1
 - X1: 單手二連刺擊 (Hit:2) 
 - X2: 轉身二連橫掃打擊 (Hit:2)
 - X3: 下落雙腳踩擊 (Hit:1, -Aerial:Character/Enemy) 
+
 * Xn Recovery 允許 Xn+1 cancel  
 * OnHit: X1, X2 Recovery 允許以下 cancel
     * Jump ↑ + X
@@ -92,6 +94,7 @@ SCOPE: HEAT1
 ### Jump ↑ + X
 
 - X1: 單手上撈打擊 (Hit:2, +Aerial:Enemy)
+
 * OnHit: X1 Recovery 允許以下 cancel
     * ↑ + Y
     * Jump
@@ -101,6 +104,7 @@ SCOPE: HEAT1
 ### Jump ↓ + X
 
 - X1: 垂直下砸 (Hit:2)
+
 * OnHit: X1 Recovery 允許以下 cancel
     * ↓ + Y
     * Jump
@@ -155,11 +159,11 @@ SCOPE: HEAT1
 高HT時:
 * 開放以下攻擊蓄力
     * ←/N/→ + X4 (Hit:3, Knockback)
-    * ←/N/→ + Y1 增加飛行道具速度 (Hit:4, Projectile)
+    * ←/N/→ + Y1 (Hit:4, Projectile, Knockback)
     * ←/N/→ + Y2 (Hit:4, +Aerial:Character/Enemy)
     * ←/N/→ + Y3 (Hit:4, Knockback)
     * Jump ←/N/→ + X3 (Hit:3, -Aerial:Character/Enemy)
-    * Jump ←/N/→ + Y1 增加飛行道具速度 (Hit:4, Projectile)
+    * Jump ←/N/→ + Y1 (Hit:4, Projectile, Knockback)
     * Jump ←/N/→ + Y2 (Hit:4, +Aerial:Enemy)
 
 ---
