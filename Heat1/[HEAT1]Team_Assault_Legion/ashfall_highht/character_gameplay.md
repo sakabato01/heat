@@ -7,7 +7,29 @@ SCOPE: HEAT1
 
 ## 角色系統
 
-### 
+### Heat Stack
+
+X命中敵人時：
+
+累積Heat Stack
+
+Heat Stack：
+
+不直接增加傷害
+僅供Y引爆使用
+
+Heat Stack越高：
+
+Y收益越高
+
+Heat Stack綁定於目標。
+
+目標死亡則Stack消失。
+
+Y命中敵人並進行傷害判定時：
+
+結算目標Heat Stack
+消耗目標Heat Stack
 
 
 
@@ -113,7 +135,10 @@ SCOPE: HEAT1
 
 ### Heat強化
 
-高HT時:
+高HT時：
 
+Heat Stack累積效率提升
+Y引爆收益提升
+演出更加激烈
 
 ---
