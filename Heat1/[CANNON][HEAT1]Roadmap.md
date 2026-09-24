@@ -17,6 +17,7 @@ SCOPE: HEAT1
 * lovebomb
 
 外觀與gameplay均已完成
+需重製
 
 ## 敵方角色:
 
@@ -37,6 +38,7 @@ SCOPE: HEAT1
 * vesper
 
 外觀與gameplay均已完成
+需重製
 
 ## 敵方角色:
 
@@ -55,6 +57,7 @@ SCOPE: HEAT1
 * stray
 
 外觀與gameplay均已完成
+需重製
 
 ## 敵方角色:
 
@@ -127,7 +130,6 @@ Radiant_Imperium vs Lost_God
 1. 完成YokaiCityGameplay設計
 2. workflow更改，因此forst order, loud hug, assault legion, under city均需要重做
 3. 未有敵方角色的陣營需要完成敵方設計
-4. Assault_Legion Zan & Pyre將需要重製
 
 # 預計新增陣營:
 
