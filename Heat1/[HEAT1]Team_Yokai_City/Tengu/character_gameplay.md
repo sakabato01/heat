@@ -20,11 +20,11 @@ SCOPE: HEAT1
 
 持刀架式:
 
-- X1: 單手中段突刺 (Hit:2)
+- X1: 單手中段突刺 (Hit:1)
 - X2: 單手下段交叉二連斬 (Hit:2)
 - X3: 單手上段交叉連斬 (Hit:3)
-- X4: 雙手上撈重斬 (Hit:1)
-- X5: 雙手袈裟重斬 (Hit:1, Knockback)
+- X4: 雙手下段上撈重斬 (Hit:1)
+- X5: 雙手上段袈裟重斬 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
 * OnHit: X1 ~ X3 Recovery 允許以下 cancel
@@ -37,13 +37,11 @@ SCOPE: HEAT1
 
 居合架式:
 
-- X1: 拔刀下段交叉斬 (Hit:2)
-- X2: 拔刀下段往復斬 (Hit:2)
-- X3: 拔刀上段重斬(Hit:1)
-- X4: 拔刀中段旋身重斬 (Hit:1, Knockback)
+- X1: 拔刀中段重斬 (Hit:1)
+- X2: 拔刀中段旋身重斬 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
-* OnHit: X1 ~ X3 Recovery 允許以下 cancel
+* OnHit: X1 Recovery 允許以下 cancel
   * ↑ + X
   * ↓ + X
   * Dash (高HT限定)
@@ -65,7 +63,7 @@ SCOPE: HEAT1
 
 居合架式:
 
-- X1: 拔刀下段上撈重斬 (Hit:1, +Aerial:Enemy)
+- X1: 拔刀下段上重斬 (Hit:1, +Aerial:Enemy)
 
 * OnHit: X1 Recovery 允許以下 cancel
   * Dash (高HT限定)
@@ -87,7 +85,7 @@ SCOPE: HEAT1
 
 居合架式:
 
-- X1: 拔刀上段重斬 (Hit:1, -Aerial:Enemy)
+- X1: 拔刀上段重斬 (Hit:1)
 
 * OnHit: X1 Recovery 允許以下 cancel
   * Dash (高HT限定)
@@ -98,7 +96,7 @@ SCOPE: HEAT1
 
 ### ←/N/→ + Y
 
-- Y1: 前方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
+- Y1: 前方突進拔刀斬擊 (Hit:2)並切換架式
 
 * OnHit: Y1 Recovery 允許以下cancel
   * ←/N/→ + X
@@ -107,7 +105,7 @@ SCOPE: HEAT1
 
 ### ↑ + Y
 
-- Y1: 前上方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
+- Y1: 前上方突進拔刀斬擊 (Hit:2)並切換架式
 
 * OnHit: Y1 Recovery 允許以下cancel
   * ←/N/→ + X
@@ -162,7 +160,7 @@ SCOPE: HEAT1
 
 居合架式:
 
-- X1: 拔刀上撈轉身重斬 (Hit:1)
+- X1: 拔刀下段上重斬 (Hit:1)
 
 * OnHit: X1 Recovery 允許以下 cancel
   * Dash (高HT限定)
@@ -177,7 +175,7 @@ SCOPE: HEAT1
 
 居合架式:
 
-- X1: 拔刀反握垂直下刺 (Hit:1, -Aerial:Character/Enemy)
+- X1: 拔刀下段下方重斬 (Hit:1)
 
 ---
 
@@ -185,7 +183,7 @@ SCOPE: HEAT1
 
 ### Jump ←/N/→ + Y
 
-- Y1: 前方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
+- Y1: 前方突進拔刀斬擊 (Hit:2)並切換架式
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
@@ -194,7 +192,7 @@ SCOPE: HEAT1
 
 ### Jump ↑ + Y
 
-- Y1: 前上方拔刀劍氣斬擊 (Hit:2, Projectile)並切換架式
+- Y1: 前上方突進拔刀斬擊 (Hit:2)並切換架式
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
@@ -203,7 +201,7 @@ SCOPE: HEAT1
 
 ### Jump ↓ + Y
 
-- Y1: 前下方拔刀劍氣斬擊 (Hit:2, Projectile) 並切換架式
+- Y1: 前下方突進拔刀斬擊 (Hit:2) 並切換架式
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
