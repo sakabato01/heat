@@ -7,10 +7,6 @@ SCOPE: HEAT1
 
 ## 角色系統
 
-反擊居合
-
-特定攻擊Start up 時被攻擊命中則強化該攻擊動作
-
 ---
 
 ## 普通攻擊
@@ -65,24 +61,18 @@ SCOPE: HEAT1
 ### ←/N/→ + Y
 
 - Y1: 前方突進拔刀重斬 (Hit:2, SuperArmor)
-- Y2: 收刀劍氣連閃 (Hit:3)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * ←/N/→ + X
-* Y1 Start up 受擊, Y1 Recovery 允許Y2 cancel
-* Y2僅能透過Y1 Start up 受擊派生使用
 
 ---
 
 ### ↑ + Y
 
 - Y1: 前上方突進拔刀重斬 (Hit:2, SuperArmor)
-- Y2: 收刀劍氣連閃 (Hit:3)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-* Y1 Start up 受擊, Y1 Recovery 允許Y2 cancel
-* Y2僅能透過Y1 Start up 受擊派生使用
 
 ---
 
@@ -107,8 +97,6 @@ SCOPE: HEAT1
 ---
 
 ### Jump ↑ + X
-
-持刀架式:
 
 - X1: 拔刀下段二連上撈斬 (Hit:2, +Aerial:Enemy)
 - X2: 拔刀下段上重斬 (Hit:1)
@@ -137,36 +125,27 @@ SCOPE: HEAT1
 ### Jump ←/N/→ + Y
 
 - Y1: 前方突進拔刀重斬 (Hit:2, SuperArmor)
-- Y2: 收刀劍氣連閃 (Hit:3)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-* Y1 Start up 受擊, Y1 Recovery 允許Y2 cancel
-* Y2僅能透過Y1 Start up 受擊派生使用
 
 ---
 
 ### Jump ↑ + Y
 
 - Y1: 前上方突進拔刀重斬 (Hit:2, SuperArmor)
-- Y2: 收刀劍氣連閃 (Hit:3)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-* Y1 Start up 受擊, Y1 Recovery 允許Y2 cancel
-* Y2僅能透過Y1 Start up 受擊派生使用
 
 ---
 
 ### Jump ↓ + Y
 
 - Y1: 前下方突進拔刀重斬 (Hit:2, SuperArmor) 
-- Y2: 收刀劍氣連閃 (Hit:3)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-* Y1 Start up 受擊, Y1 Recovery 允許Y2 cancel
-* Y2僅能透過Y1 Start up 受擊派生使用
 
 ---
 
