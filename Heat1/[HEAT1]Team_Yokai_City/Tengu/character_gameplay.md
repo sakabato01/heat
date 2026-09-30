@@ -14,10 +14,9 @@ SCOPE: HEAT1
 ### ←/N/→ + X
 
 - X1: 拔刀下段往復斬 (Hit:2)
-- X2: 單手下段交叉斬 (Hit:2)
-- X3: 單手上段逆袈裟重斬 (Hit:1)
-- X4: 雙手下段上撈重斬 (Hit:1)
-- X5: 雙手上段袈裟重斬 (Hit:1, Knockback)
+- X2: 拔刀下段交叉斬 (Hit:2)
+- X3: 單手下段上撈重斬 (Hit:1)
+- X4: 雙手上段袈裟重斬 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
 * OnHit: X1 ~ X3 Recovery 允許以下 cancel
@@ -26,7 +25,6 @@ SCOPE: HEAT1
   * ↑ + X
   * ↓ + X
   * Jump
-  * Dash(高HT限定)
 
 ---
 
@@ -39,7 +37,6 @@ SCOPE: HEAT1
   * ←/N/→ + Y
   * ↑ + Y
   * Jump
-  * Dash (高HT限定)
 
 ---
 
@@ -52,7 +49,6 @@ SCOPE: HEAT1
   * ←/N/→ + Y
   * ↑ + Y
   * Jump
-  * Dash (高HT限定)
 
 ---
 
@@ -81,7 +77,7 @@ SCOPE: HEAT1
 ### Jump ←/N/→ + X
 
 - X1: 拔刀下段交叉二連斬 (Hit:2)
-- X2: 單手上段斜斬 (Hit:1)
+- X2: 拔刀上段斜斬 (Hit:1)
 - X3: 單手下劈落地斬 (Hit:1, -Aerial:Character/Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
@@ -92,14 +88,13 @@ SCOPE: HEAT1
   * Jump ↑ + X
   * Jump ↓ + X
   * Jump
-  * Dash (高HT限定)
 
 ---
 
 ### Jump ↑ + X
 
 - X1: 拔刀下段二連上撈斬 (Hit:2, +Aerial:Enemy)
-- X2: 拔刀下段上重斬 (Hit:1)
+- X2: 單手下段上重斬 (Hit:1)
 
 * Xn Recovery 允許 Xn+1 cancel
 * OnHit: X1 Recovery 允許以下 cancel
@@ -107,8 +102,6 @@ SCOPE: HEAT1
   * Jump ↑ + Y
   * Jump ↓ + Y
   * Jump
-  * Dash (高HT限定)
-
 ---
 
 ### Jump ↓ + X
@@ -164,7 +157,5 @@ SCOPE: HEAT1
 ## Heat互動
 
 ### Heat強化
-
-特定攻擊允許在高HT時Dash cancel
 
 ---
