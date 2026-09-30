@@ -14,7 +14,7 @@ SCOPE: HEAT1
 ### ←/N/→ + X
 
 - X1: 拔刀下段往復斬 (Hit:2)
-- X2: 拔刀下段交叉斬 (Hit:2)
+- X2: 單手下段交叉斬 (Hit:2)
 - X3: 單手下段上撈重斬 (Hit:1)
 - X4: 雙手上段袈裟重斬 (Hit:1, Knockback)
 
@@ -77,7 +77,7 @@ SCOPE: HEAT1
 ### Jump ←/N/→ + X
 
 - X1: 拔刀下段交叉二連斬 (Hit:2)
-- X2: 拔刀上段斜斬 (Hit:1)
+- X2: 單手上段斜斬 (Hit:1)
 - X3: 單手下劈落地斬 (Hit:1, -Aerial:Character/Enemy)
 
 * Xn Recovery 允許 Xn+1 cancel
