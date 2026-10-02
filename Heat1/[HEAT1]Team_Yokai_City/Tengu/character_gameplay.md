@@ -11,11 +11,19 @@ SCOPE: HEAT1
 
 ## 普通攻擊
 
+### Hold X
+
+- X1: 拔刀快速連斬 (Hit:3)
+
+* 高HT時，X1 Recovery 追加刀光斬擊(Hit: 3)
+
+---
+
 ### ←/N/→ + X
 
-- X1: 拔刀下段往復斬 (Hit:2)
+- X1: 單手下段往復斬 (Hit:2)
 - X2: 單手下段交叉斬 (Hit:2)
-- X3: 單手下段上撈重斬 (Hit:1)
+- X3: 雙手下段上撈重斬 (Hit:1)
 - X4: 雙手上段袈裟重斬 (Hit:1, Knockback)
 
 * Xn Recovery 允許 Xn+1 cancel
@@ -25,54 +33,80 @@ SCOPE: HEAT1
   * ↑ + X
   * ↓ + X
   * Jump
+  * Hold X
+  * Hold Y
 
 ---
 
 ### ↑ + X
 
-- X1: 拔刀上撈斬 (Hit:2, +Aerial:Enemy)
-- X2: 單手上撈跳重斬(Hit:1, +Aerial:Character/Enemy)
+- X1: 單手下段上撈斬 (Hit:2, +Aerial:Enemy)
+- X2: 跳躍單手下段上撈重斬(Hit:1, +Aerial:Character/Enemy)
 
 * OnHit: X1, X2 Recovery 允許以下 cancel
   * ←/N/→ + Y
   * ↑ + Y
   * Jump
+  * Hold X
+  * Hold Y
 
 ---
 
 ### ↓ + X
 
-- X1: 拔刀下段往復二連斬 (Hit:2, +Aerial:Enemy)
-- X2: 單手上段重斬 (Hit:1, -Aerial:Enemy)
+- X1: 單手轉身蹲姿下段上斬 (Hit:2)
+- X2: 單手轉身下段上重斬 (Hit:1, +Aerial:Enemy, Knockback)
 
 * OnHit: X1, X2 Recovery 允許以下 cancel
   * ←/N/→ + Y
   * ↑ + Y
   * Jump
+  * Hold X
+  * Hold Y
 
 ---
 
 ## 特殊攻擊
 
+### Hold Y
+
+- Y1: 拔刀突進橫斬 (Hit:2)
+
+* 高HT時，Y1 Recovery 追加刀光斬擊(Hit: 3)
+
+---
+
 ### ←/N/→ + Y
 
-- Y1: 前方突進拔刀重斬 (Hit:2, SuperArmor)
+- Y1: 前方突進重斬 (Hit:2)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * ←/N/→ + X
+  * Hold X
+  * Hold Y
 
 ---
 
 ### ↑ + Y
 
-- Y1: 前上方突進拔刀重斬 (Hit:2, SuperArmor)
+- Y1: 前上方突進重斬 (Hit:2)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
+  * Jump Hold X
+  * Jump Hold Y
 
 ---
 
 ## 跳躍攻擊
+
+### Jump Hold X
+
+- X1: 拔刀快速連斬 (Hit:3)
+
+* 高HT時，X1 Recovery 追加刀光斬擊(Hit: 3)
+
+---
 
 ### Jump ←/N/→ + X
 
@@ -88,12 +122,14 @@ SCOPE: HEAT1
   * Jump ↑ + X
   * Jump ↓ + X
   * Jump
+  * Jump Hold X
+  * Jump Hold Y
 
 ---
 
 ### Jump ↑ + X
 
-- X1: 拔刀下段二連上撈斬 (Hit:2, +Aerial:Enemy)
+- X1: 單手下段二連上撈斬 (Hit:2, +Aerial:Enemy)
 - X2: 單手下段上重斬 (Hit:1)
 
 * Xn Recovery 允許 Xn+1 cancel
@@ -102,6 +138,9 @@ SCOPE: HEAT1
   * Jump ↑ + Y
   * Jump ↓ + Y
   * Jump
+  * Jump Hold X
+  * Jump Hold Y
+
 ---
 
 ### Jump ↓ + X
@@ -115,30 +154,44 @@ SCOPE: HEAT1
 
 ## 跳躍特殊
 
+### Jump Hold Y
+
+- Y1: 拔刀突進橫斬 (Hit:2)
+
+* 高HT時，Y1 Recovery 追加刀光斬擊(Hit: 3)
+
+---
+
 ### Jump ←/N/→ + Y
 
-- Y1: 前方突進拔刀重斬 (Hit:2, SuperArmor)
+- Y1: 前方突進重斬 (Hit:2)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
+  * Jump Hold X
+  * Jump Hold Y
 
 ---
 
 ### Jump ↑ + Y
 
-- Y1: 前上方突進拔刀重斬 (Hit:2, SuperArmor)
+- Y1: 前上方突進重斬 (Hit:2)
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
+  * Jump Hold X
+  * Jump Hold Y
 
 ---
 
 ### Jump ↓ + Y
 
-- Y1: 前下方突進拔刀重斬 (Hit:2, SuperArmor) 
+- Y1: 前下方突進重斬 (Hit:2) 
 
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
+  * Jump Hold X
+  * Jump Hold Y
 
 ---
 
@@ -157,5 +210,7 @@ SCOPE: HEAT1
 ## Heat互動
 
 ### Heat強化
+
+* 高HT時，特定攻擊 Recovery 追加刀光斬擊(Hit: 3)
 
 ---
