@@ -8,9 +8,7 @@ SCOPE: HEAT1
 ## 角色系統
 
 * X攻擊將增加專注值
-* 消耗專注, Y攻擊 Recovery將可進行以下cancel
-  * Y
-  * 衝刺
+* 消耗專注, Y攻擊 Recovery將可再次使用
 
 ---
 
@@ -63,16 +61,13 @@ SCOPE: HEAT1
 
 ### ←/N/→ + Y
 
-- Y1: 前方突進拔刀迴旋重斬 (Hit:1)
-- Y2: 拔刀快速連斬 (Hit:4)
+- Y1: 前方突進拔刀迴旋重斬 (Hit:2)
+- Y2: 拔刀迴旋重斬 (Hit:2)
 
-* Hold Y1將消耗專注值增加Y1傷害
 * OnHit: Y1 Recovery 允許以下cancel
   * ←/N/→ + X
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * OnHit: Y2 Recovery 允許以下cancel
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * 高HT, Y1, Y2 Recovery 追加刀光斬擊(Hit: 3)
 
@@ -80,16 +75,13 @@ SCOPE: HEAT1
 
 ### ↑ + Y
 
-- Y1: 前上方突進拔刀迴旋重斬 (Hit:1)
-- Y2: 拔刀快速連斬 (Hit:4)
+- Y1: 前上方突進拔刀迴旋重斬 (Hit:2)
+- Y2: 拔刀迴旋重斬 (Hit:2)
 
-* Hold Y1將消耗專注值增加Y1傷害
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * OnHit: Y2 Recovery 允許以下cancel
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * 高HT, Y1, Y2 Recovery 追加刀光斬擊(Hit: 3)
 
@@ -146,16 +138,13 @@ SCOPE: HEAT1
 
 ### Jump ←/N/→ + Y
 
-- Y1: 前方突進拔刀迴旋重斬 (Hit:1)
-- Y2: 拔刀快速連斬 (Hit:4)
+- Y1: 前方突進拔刀迴旋重斬 (Hit:2)
+- Y2: 拔刀迴旋重斬 (Hit:2)
 
-* Hold Y1將消耗專注值增加Y1傷害
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * OnHit: Y2 Recovery 允許以下cancel
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * 高HT, Y1, Y2 Recovery 追加刀光斬擊(Hit: 3)
 
@@ -163,16 +152,13 @@ SCOPE: HEAT1
 
 ### Jump ↑ + Y
 
-- Y1: 前上方突進拔刀迴旋重斬 (Hit:1)
-- Y2: 拔刀快速連斬 (Hit:4)
+- Y1: 前上方突進拔刀迴旋重斬 (Hit:2)
+- Y2: 拔刀迴旋重斬 (Hit:2)
 
-* Hold Y1將消耗專注值增加Y1傷害
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * OnHit: Y2 Recovery 允許以下cancel
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * 高HT, Y1, Y2 Recovery 追加刀光斬擊(Hit: 3)
 
@@ -180,16 +166,13 @@ SCOPE: HEAT1
 
 ### Jump ↓ + Y
 
-- Y1: 前下方突進拔刀迴旋重斬(Hit:1) 
-- Y2: 拔刀快速連斬 (Hit:4)
+- Y1: 前下方突進拔刀迴旋重斬(Hit:2) 
+- Y2: 拔刀迴旋重斬 (Hit:2)
 
-* Hold Y1將消耗專注值增加Y1傷害
 * OnHit: Y1 Recovery 允許以下cancel
   * Jump ←/N/→ + X
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * OnHit: Y2 Recovery 允許以下cancel
-  * Dash (消耗專注值)
   * Y2 (消耗專注值)
 * 高HT, Y1, Y2 Recovery 追加刀光斬擊(Hit: 3)
 
