@@ -10,7 +10,7 @@ SCOPE: HEAT1
 ### 羅剎能量
 
 * X/格檔/閃避 將累積羅剎能量
-* Y 消耗羅剎能量進行攻擊
+* X/Y Active 消耗羅剎能量進行 閃避 cancel
 
 ---
 
@@ -61,27 +61,21 @@ SCOPE: HEAT1
 
 ## 特殊攻擊
 
-消耗羅剎能量使用
-
 ### ←/N/→ + Y
 
-- Y1: 向前突進, 雙手上段重斬 (Hit:2, SuperArmor)
+- Y1: 雙手上段重斬 (Hit:2, SuperArmor)
 
 * Y1 Recovery 允許 以下 cancel
-    * ←/N/→ + Y
-    * ↑ + Y
-    * ↓ + Y
+
 
 ---
 
 ### ↑ + Y
 
-- Y1: 前上突進, 雙手上段重斬 (Hit:2, +Aerial:Character, SuperArmor)
+- Y1: 雙手上段重斬 (Hit:2, +Aerial:Character, SuperArmor)
 
 * Y1 Recovery 允許 以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+
 
 ---
 
@@ -134,38 +128,30 @@ SCOPE: HEAT1
 
 ## 跳躍特殊
 
-消耗羅剎能量使用
-
 ### Jump ←/N/→ + Y
 
-- Y1: 向前突進, 雙手上段重斬 (Hit:2, SuperArmor)
+- Y1: 雙手上段重斬 (Hit:2, SuperArmor)
 
 * Y1 Recovery 允許 以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+
 
 ---
 
 ### Jump ↑ + Y
 
-- Y1: 前上突進, 雙手上段重斬 (Hit:2, SuperArmor)
+- Y1: 雙手上段重斬 (Hit:2, SuperArmor)
 
 * Y1 Recovery 允許 以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+
 
 ---
 
 ### Jump ↓ + Y
 
-- Y1: 前下突進, 雙手上段重斬 (Hit:2, SuperArmor)
+- Y1: 雙手上段重斬 (Hit:2, SuperArmor)
 
 * Y1 Recovery 允許 以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+
 
 ---
 
@@ -188,8 +174,10 @@ SCOPE: HEAT1
 高HT時:
 * 閃避動作轉換為突進旋身斬擊 (Hit:3, SuperArmor)
 * OnHit: Recovery 可被以下動作 cancel
-    * X / ↑ + X / ↓ + X
-    * Jump X / Jump ↑ + X / Jump ↓ + X
+    * ←/N/→X / ↑ + X / ↓ + X
+    * Jump ←/N/→ X / Jump ↑ + X / Jump ↓ + X
+    * ←/N/→ Y / ↑ + Y / ↓ + Y
+    * Jump ←/N/→ Y / Jump ↑ + Y / Jump ↓ + Y
     * Jump
 
 ---
