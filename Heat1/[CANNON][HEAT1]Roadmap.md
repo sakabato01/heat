@@ -12,9 +12,9 @@ SCOPE: HEAT1
 
 ## 可操作角色：
 
-* backbeat
-* feedback
-* lovebomb
+* backbeat 需重製
+* feedback 需重製
+* lovebomb 需重製
 
 外觀與gameplay均已完成
 需重製
@@ -33,9 +33,9 @@ SCOPE: HEAT1
 
 ## 可操作角色:
 
-* hound
-* stillblade
-* vesper
+* hound 需重製
+* stillblade 需重製
+* vesper 需重製
 
 外觀與gameplay均已完成
 需重製
@@ -52,12 +52,12 @@ SCOPE: HEAT1
 
 ## 可操作角色:
 
-* fixer
-* lucid
-* stray
+* fixer 需重製
+* lucid 需重製
+* stray 需重製
 
 外觀與gameplay均已完成
-需重製
+需重製, 方向暫定為科幻武俠
 
 ## 敵方角色:
 
@@ -71,9 +71,9 @@ WW1惡魔戰爭
 
 ## 可操作角色:
 
-* ashfall
-* pyre
-* zan
+* ashfall 需重製
+* pyre 需重製
+* zan 需重製
 
 外觀與gameplay均已完成
 
@@ -87,10 +87,10 @@ WW1惡魔戰爭
 
 ## 可操作角色:
 
-* rakshasa
-* tengu
-* yuki
-* gumo
+* rakshasa 已完成
+* tengu 已完成
+* yuki 已完成
+* gumo 未完成gameplay設計
 
 完成外觀設計，缺乏gameplay設計
 
@@ -98,8 +98,8 @@ WW1惡魔戰爭
 
 * shuten
 * dodomeki
-* kiyohime
-* ibaraki
+* kiyohime 未完成gameplay設計
+* ibaraki 未完成gameplay設計
 
 完成外觀設計，缺乏gameplay設計
 

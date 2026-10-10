@@ -9,8 +9,8 @@ SCOPE: HEAT1
 
 ### 羅剎能量
 
-* X/格檔/閃避 將累積羅剎能量
-* X/Y Recovery 消耗羅剎能量進行 閃避 cancel
+* X攻擊命中/格檔成功/閃避成功 將累積羅剎能量
+* X/Y Recovery 消耗羅剎能量進行 Dash cancel
 
 ---
 
@@ -26,10 +26,8 @@ SCOPE: HEAT1
 
 * Xn Recovery 允許 Xn+1 cancel
 * OnHit: X1 ~ X3 Recovery 允許以下 cancel
-    * ↑ + X
-    * ↓ + X
-    * ←/N/→ + Y
-    * ↑ + Y
+    * ↑ + X / ↓ + X
+    * ←/N/→ + Y / ↑ + Y
     * Jump
     * Dash(消耗羅剎能量)
 
@@ -40,8 +38,7 @@ SCOPE: HEAT1
 - X1: 雙手交替下段二連上撈斬 (Hit:2, +Aerial:Enemy)
 
 * OnHit: X1 Recovery允許以下 cancel
-    * ←/N/→ + Y
-    * ↑ + Y
+    * ←/N/→ + Y / ↑ + Y
     * Jump
     * Dash(消耗羅剎能量)
     
@@ -49,11 +46,10 @@ SCOPE: HEAT1
 
 ### ↓ + X
 
-- X1: 雙手交替上段二連下劈斬 (Hit:2, -Aerial:Enemy)
+- X1: 雙手交替上段二連重斬 (Hit:2, -Aerial:Enemy)
 
 * OnHit: X1 Recovery允許以下 cancel
-    * ←/N/→ + Y
-    * ↑ + Y
+    * ←/N/→ + Y / ↑ + Y
     * Jump
     * Dash(消耗羅剎能量)
     
@@ -63,20 +59,26 @@ SCOPE: HEAT1
 
 ### ←/N/→ + Y
 
-- Y1:  (Hit:2)
+- Y1: 雙手交替連斬 (Hit:4)
+- Y2: 單手橫掃重斬 (Hit:1, Knockback)
 
-* Y1 Recovery 允許 以下 cancel
+* Yn Recovery 允許 Yn+1 cancel
+* OnHit: Y1, Y2 Recovery 允許 以下 cancel
+    * Jump
     * Dash(消耗羅剎能量)
 
 ---
 
 ### ↑ + Y
 
-- Y1:  (Hit:2)
+- Y1: 跳躍單手下段上撈重斬 (Hit:2, +Aerial:Character/Enemy)
+- Y2: 空中單手橫掃重斬 (Hit:1, Knockback)
 
-* Y1 Recovery 允許 以下 cancel
+* Yn Recovery 允許 Yn+1 cancel
+* OnHit: Y1, Y2 Recovery 允許 以下 cancel
+    * Jump
     * Dash(消耗羅剎能量)
-    
+
 ---
 
 ## 跳躍攻擊
@@ -89,11 +91,8 @@ SCOPE: HEAT1
 
 * Xn Recovery 允許 Xn+1 cancel
 * OnHit: X1 ~ X2 Recovery 允許以下 cancel
-    * Jump ↑ + X
-    * Jump ↓ + X
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+    * Jump ↑ + X / Jump ↓ + X
+    * Jump ←/N/→ + Y / Jump ↑ + Y / Jump ↓ + Y
     * Jump
     * Dash(消耗羅剎能量)
     
@@ -101,12 +100,10 @@ SCOPE: HEAT1
 
 ### Jump ↑ + X
 
-- X1: 雙手交替下段斜向二連上撈斬 (Hit:2, +Aerial:Enemy)
+- X1: 雙手交替下段二連上撈斬 (Hit:2, +Aerial:Enemy)
 
 * OnHit: X1 Recovery 允許以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+    * Jump ←/N/→ + Y / Jump ↑ + Y / Jump ↓ + Y
     * Jump
     * Dash(消耗羅剎能量)
     
@@ -117,9 +114,7 @@ SCOPE: HEAT1
 - X1: 雙手上段下劈重斬 (Hit:1, -Aerial:Enemy)
 
 * OnHit: X1 Recovery 允許以下 cancel
-    * Jump ←/N/→ + Y
-    * Jump ↑ + Y
-    * Jump ↓ + Y
+    * Jump ←/N/→ + Y / Jump ↑ + Y / Jump ↓ + Y
     * Jump
     * Dash(消耗羅剎能量)
     
@@ -129,31 +124,36 @@ SCOPE: HEAT1
 
 ### Jump ←/N/→ + Y
 
-- Y1:  (Hit:2)
+- Y1: 雙手交替連斬 (Hit:4)
+- Y2: 單手橫掃重斬 (Hit:1, Knockback)
 
-* Y1 Recovery 允許 以下 cancel
+* Yn Recovery 允許 Yn+1 cancel
+* OnHit: Y1, Y2 Recovery 允許 以下 cancel
+    * Jump
     * Dash(消耗羅剎能量)
     
-
 ---
 
 ### Jump ↑ + Y
 
-- Y1:  (Hit:2)
+- Y1: 空中單手下段上撈重斬 (Hit:2, +Aerial:Enemy)
+- Y2: 空中單手橫掃重斬 (Hit:1, Knockback)
 
-* Y1 Recovery 允許 以下 cancel
+* Yn Recovery 允許 Yn+1 cancel
+* OnHit: Y1, Y2 Recovery 允許 以下 cancel
+    * Jump
     * Dash(消耗羅剎能量)
-    
 
 ---
 
 ### Jump ↓ + Y
 
-- Y1:  (Hit:2)
+- Y1: 空中雙手上段下劈重斬 (Hit:1, -Aerial:Character/Enemy)
 
-* Y1 Recovery 允許 以下 cancel
+* Yn Recovery 允許 Yn+1 cancel
+* OnHit: Y1 Recovery 允許 以下 cancel
     * Dash(消耗羅剎能量)
-    
+
 ---
 
 ## 格檔
@@ -173,5 +173,6 @@ SCOPE: HEAT1
 ### Heat強化
 
 高HT時:
+Dash cancel X/Y 時, Active 追加單手前刺(Hit:1)
 
 ---
