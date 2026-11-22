@@ -30,6 +30,15 @@ SCOPE: GLOBAL
 * 虛弱值開始下降所需時間
 * 虛弱狀態持續時間
 
+# Overkill
+
+1. 當敵人HP歸零後進入Overkill狀態
+2. Overkill狀態下仍可以被攻擊
+3. Overkill狀態將持續一段時間，時間結束則Overkill結束
+4. 敵人掉落獎勵將隨Overkill傷害增加
+5. Overkill狀態下敵人無法攻擊
+6. Overkill狀態結束，該敵方單位掉落金幣並且死亡
+
 # 敵方配置
 
 * 小規模高密度戰鬥
